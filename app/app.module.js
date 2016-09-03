@@ -19,7 +19,7 @@
     'AnalyticsProvider',
     
     function($locationProvider, $stateProvider, $urlRouterProvider, $urlMatcherFactoryProvider, $animateProvider, AnalyticsProvider) {
-      //$locationProvider.html5Mode(true);
+      $locationProvider.html5Mode(true);
 
       // Set Google Analytics account.
       AnalyticsProvider.setAccount({
