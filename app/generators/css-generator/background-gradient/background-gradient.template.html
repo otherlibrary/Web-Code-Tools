@@ -1,0 +1,85 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="CssBackgroundGradientController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <browser-support></browser-support>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectType">Type</label>
+              <select data-wct-select id="selectType" data-ng-model="ctrl.data.type"
+              data-abm-form-control>
+                <option value="linear-gradient">Linear</option>
+                <option value="radial-gradient">Radial</option>
+                <option value="repeating-linear-gradient">Repeating Linear</option>
+                <option value="repeating-radial-gradient">Repeating Radial</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-6">
+              <label data-wct-label for="inputFirstColor">
+                <span data-ng-if="ctrl.data.type == 'linear-gradient' || ctrl.data.type == 'repeating-linear-gradient'">
+                  First Color
+                </span>
+                <span data-ng-if="ctrl.data.type == 'radial-gradient' || ctrl.data.type == 'repeating-radial-gradient'">
+                  Inner Color
+                </span>
+              </label>
+              <input data-wct-input-text id="inputFirstColor" colorpicker="hex"
+              data-ng-model="ctrl.data.firstColor" data-abm-form-control required>
+            </div>
+            <div class="col-sm-6">
+              <label data-wct-label for="inputSecondColor">
+                <span data-ng-if="ctrl.data.type == 'linear-gradient' || ctrl.data.type == 'repeating-linear-gradient'">
+                  Second Color
+                </span>
+                <span data-ng-if="ctrl.data.type == 'radial-gradient' || ctrl.data.type == 'repeating-radial-gradient'">
+                  Outer Color
+                </span>
+              </label>
+              <input data-wct-input-text id="inputSecondColor" colorpicker="hex"
+              data-ng-model="ctrl.data.secondColor" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group
+          data-ng-if="ctrl.data.type == 'repeating-linear-gradient' || ctrl.data.type == 'repeating-radial-gradient'">
+            <div class="col-sm-12">
+              <label data-wct-label for="inputColorStop">Color Stop</label>
+              <input data-wct-input-range id="inputColorStop" min="0" max="100"
+              data-ng-model="ctrl.data.colorStop" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group
+          data-ng-if="ctrl.data.type == 'linear-gradient' || ctrl.data.type == 'repeating-linear-gradient'">
+            <div class="col-sm-12">
+              <label data-wct-label for="inputAngle">Angle</label>
+              <input data-wct-input-range id="inputAngle" min="0" max="360"
+              data-ng-model="ctrl.data.angle" data-abm-form-control required>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <h3>Preview</h3>
+
+    <div class="preview preview-full" style="{{ctrl.elementCss()}}"></div>
+
+    <side-ad></side-ad>
+
+    <h3>Code</h3>
+
+    <section-code code-id="element-css" title="Add this to the element you want add a background gradient."
+      code="{{ctrl.elementCss()}}"></section-code>
+  </div>
+</div>

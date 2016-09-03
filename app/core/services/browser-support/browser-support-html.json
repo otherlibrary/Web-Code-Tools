@@ -1,0 +1,352 @@
+{
+  "html-generator.audio": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "9+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.base-link": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.button": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.details": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "No",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "No",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.dialog": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "No",
+      "safari": "No",
+      "ie": "No",
+      "edge": "No",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.hyperlink": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.iframe": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.image": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-checkbox-radio": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-color": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "No",
+      "ie": "No",
+      "edge": "No",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-date-time": {
+    "browsers": {
+      "chrome": "Mostly",
+      "firefox": "No",
+      "safari": "No",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-email": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-file": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-image": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-number-range": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "10+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-password": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-search": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "10+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-submit": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-telephone": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-text": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.input-url": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.meter": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.progress-bar": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.text-bi-directional-override": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.text-bold": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.text-cite": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.text-code": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.text-incorrect": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.text-italic": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.text-mark": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "9+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.text-quote": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.text-superscript-subscript": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.text-underline": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.textarea": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "html-generator.video": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "9+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="JsonLdPersonController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputName">Name</label>
+              <input data-wct-input-text id="inputName"
+              data-ng-model="ctrl.data.name" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputJob">Job / Title</label>
+              <input data-wct-input-text id="inputJob" rows="3"
+              data-ng-model="ctrl.data.job" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-6">
+              <label data-wct-label for="inputCity">City</label>
+              <input data-wct-input-text id="inputCity"
+              data-ng-model="ctrl.data.city" data-abm-form-control required>
+            </div>
+            <div class="col-sm-6">
+              <label data-wct-label for="inputRegion">State / Province / Region</label>
+              <input data-wct-input-text id="inputRegion"
+              data-ng-model="ctrl.data.region" data-abm-form-control required>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6">
+    <h3>Code</h3>
+
+    <section-code code-id="json-ld" code="{{ctrl.jsonLd()}}"></section-code>
+
+    <side-ad></side-ad>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+.view-animate.ng-leave-prepare {
+  display: none;
+}
+
+/* Stop Breadcrumb Flicker */
+
+.nav li.ng-leave-prepare {
+  display: none;
+}
+
+/* Mobile Navigation */
+
+@media screen and (max-width: 767px) {
+  .in .sidebar,
+  .in-add.in-add-active .sidebar {
+    animation: 0.3s navSlideIn ease;
+  }
+
+  @keyframes navSlideIn {
+    0% {
+      left: -1000px;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+}
+
+/* Alert Top */
+.alert-top.ng-hide-add {
+  animation: 0.5s alertTopSlideOut ease;
+}
+
+.alert-top.ng-hide-remove {
+  animation: 0.5s alertTopSlideIn ease;
+}
+
+@keyframes alertTopSlideIn {
+  0% {
+    opacity: 0;
+    right: -1000px;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@keyframes alertTopSlideOut {
+  0% {
+    opacity: 1;
+    right: 0;
+  }
+
+  100% {
+    opacity: 0;
+    right: -1000px;
+  }
+}
+
+/* Animate Repeat */
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  transition: all 0.2s linear;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity: 0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+}

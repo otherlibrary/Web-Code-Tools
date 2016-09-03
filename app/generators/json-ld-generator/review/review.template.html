@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="JsonLdReviewController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputItem">Item Reviewed</label>
+              <input data-wct-input-text id="inputItem"
+              data-ng-model="ctrl.data.item" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputAuthor">Author</label>
+              <input data-wct-input-text id="inputAuthor"
+              data-ng-model="ctrl.data.author" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputDateReviewed">Date Reviewed (yyyy-mm-dd)</label>
+              <input data-wct-input-text id="inputDateReviewed"
+              data-ng-model="ctrl.data.dateReviewed" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputDescription">Description</label>
+              <textarea data-wct-textarea id="inputDescription" rows="3" maxlength="2000"
+              data-ng-model="ctrl.data.description" data-abm-form-control required></textarea>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputRating">Rating (1 - 5)</label>
+              <input data-wct-input-number id="inputRating" min="1" max="5"
+              placeholder="5 is best, 1 is worst"
+              data-ng-model="ctrl.data.rating" data-abm-form-control required>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6">
+    <h3>Code</h3>
+
+    <section-code code-id="json-ld" code="{{ctrl.jsonLd()}}"></section-code>
+
+    <side-ad></side-ad>
+  </div>
+</div>

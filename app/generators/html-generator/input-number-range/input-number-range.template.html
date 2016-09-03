@@ -1,0 +1,75 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="HtmlInputNumberRangeController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <browser-support></browser-support>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectType">Type Type</label>
+              <select data-wct-select id="selectType"
+              data-ng-model="ctrl.data.type" data-abm-form-control>
+                <option value="number">Number</option>
+                <option value="range">Range</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputName">Name</label>
+              <input data-wct-input-text id="inputName"
+              data-ng-model="ctrl.data.name" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputDefaultValue">Default Value</label>
+              <input data-wct-input-number id="inputDefaultValue"
+              data-ng-model="ctrl.data.defaultValue" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputMinValue">Minimum Value</label>
+              <input data-wct-input-number id="inputMinValue"
+              data-ng-model="ctrl.data.minValue" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputMaxValue">Maximum Value</label>
+              <input data-wct-input-number id="inputMaxValue"
+              data-ng-model="ctrl.data.maxValue" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputStepValue">Step</label>
+              <input data-wct-input-number id="inputStepValue"
+              data-ng-model="ctrl.data.stepValue" data-abm-form-control>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <h3>Preview</h3>
+
+    <div class="preview-html" ng-bind-html="ctrl.elementHtml() | rawHtml"></div>
+
+    <side-ad></side-ad>
+
+    <h3>Code</h3>
+
+    <section-code code-id="element-html" code="{{ctrl.elementHtml()}}"></section-code>
+  </div>
+</div>

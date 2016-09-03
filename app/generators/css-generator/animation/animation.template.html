@@ -1,0 +1,135 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="CssAnimationController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <browser-support></browser-support>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectType">Type</label>
+              <select data-wct-select id="selectType" data-ng-model="ctrl.data.type"
+              data-ng-change="ctrl.updatePageStyle()" data-abm-form-control>
+                <option value="horizontal-move">Horizontal Move</option>
+                <option value="vertical-move">Vertical Move</option>
+                <option value="rotate-spin">Rotate / Spin</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputName">Name</label>
+              <input data-wct-input-text id="inputName"
+              data-ng-model="ctrl.data.name" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-xs-12 col-sm-6">
+              <label data-wct-label for="inputStart">
+                <span data-ng-if="ctrl.data.type == 'horizontal-move'">
+                  Start distance from left (px)
+                </span>
+                <span data-ng-if="ctrl.data.type == 'vertical-move'">
+                  Start distance from top (px)
+                </span>
+                <span data-ng-if="ctrl.data.type == 'rotate-spin'">
+                  Start angle (deg)
+                </span>
+              </label>
+              <input data-wct-input-number id="inputStart"
+              data-ng-change="ctrl.updatePageStyle()" data-ng-model="ctrl.data.start"
+              data-abm-form-control required>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <label data-wct-label for="inputEndDistance">
+                <span data-ng-if="ctrl.data.type == 'horizontal-move'">
+                  End distance from left (px)
+                </span>
+                <span data-ng-if="ctrl.data.type == 'vertical-move'">
+                  End distance from top (px)
+                </span>
+                <span data-ng-if="ctrl.data.type == 'rotate-spin'">
+                  End angle (deg)
+                </span>
+              </label>
+              <input data-wct-input-number id="inputEnd" data-ng-model="ctrl.data.end"
+              data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectTimingFunction">Timing function</label>
+              <select data-wct-select id="selectTimingFunction"
+              data-ng-model="ctrl.data.timingFunction" data-abm-form-control>
+                <option value="linear">Linear</option>
+                <option value="ease">Ease</option>
+                <option value="ease-in">Ease In</option>
+                <option value="ease-out">Ease Out</option>
+                <option value="ease-in-out">Ease In Out</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-xs-12 col-sm-6">
+              <label data-wct-label for="inputDuration">Duration (seconds)</label>
+              <input data-wct-input-number id="inputDuration" min="0"
+              data-ng-model="ctrl.data.duration" data-abm-form-control required>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <label data-wct-label for="inputDelay">Delay (seconds)</label>
+              <input data-wct-input-number id="inputDelay" min="0"
+              data-ng-model="ctrl.data.delay" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-xs-12 col-sm-6">
+              <label data-wct-label for="inputIteration">Iteration count (0 for infinite)</label>
+              <input data-wct-input-text id="inputIteration"
+              data-ng-model="ctrl.data.iterationCount" data-abm-form-control required>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <label data-wct-label for="selectDirection">Direction</label>
+              <select data-wct-select id="selectDirection"
+              data-ng-model="ctrl.data.direction" data-abm-form-control>
+                <option value="normal">Normal</option>
+                <option value="reverse">Reverse</option>
+                <option value="alternate">Alternate</option>
+                <option value="alternate-reverse">Alternate Reverse</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <h3>Preview</h3>
+
+    <div class="alert alert-dismissible alert-warning">
+      <strong>Heads up!</strong> Depending on the size of your page and the
+      location of your animated object, you may have to edit the code once
+      it's placed on your site. It's very easy to do!
+    </div>
+
+    <div class="preview preview-small" style="{{ctrl.elementCss()}}">
+      Watch me!
+    </div>
+
+    <side-ad></side-ad>
+
+    <h3>Code</h3>
+
+    <section-code code-id="element-css" title="Add this to the element you want to animate."
+      code="{{ctrl.elementCss()}}"></section-code>
+
+    <section-code code-id="keyframe-css" title="Add this in CSS after your animated object."
+      code="{{ctrl.keyframeCss()}}"></section-code>
+  </div>
+</div>

@@ -1,0 +1,402 @@
+{
+  "css-generator.animation": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "10+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.background-color": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.background-gradient": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "10+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.background-image": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.blur": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.border": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.border-image": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "11+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.border-radius": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "9+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.box-resize": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "No",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.box-shadow": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "9+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.brightness": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.columns": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.contrast": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.cursor": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.display": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.grayscale": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.hue-rotate": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.invert": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.letter-spacing": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.line-height": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.list-style": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.opacity": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "9+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.outline": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.overflow": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.perspective": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.saturate": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.sepia": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.tab-size": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "No",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.text-align": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.text-decoration": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.text-indent": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.text-shadow": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.text-transform": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.transform": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "10+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.transition": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "10+",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.visibility": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.white-space": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.word-break": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.word-spacing": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  },
+  "css-generator.word-wrap": {
+    "browsers": {
+      "chrome": "Yes",
+      "firefox": "Yes",
+      "safari": "Yes",
+      "ie": "Yes",
+      "edge": "Yes",
+      "opera" : "Yes"
+    }
+  }
+}

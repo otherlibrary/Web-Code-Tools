@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="CssPerspectiveController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <browser-support></browser-support>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputPerspective">Perspective</label>
+              <input data-wct-input-range id="inputPerspective" min="0" max="1000"
+              data-ng-model="ctrl.data.perspective" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputRotateX">Rotate X</label>
+              <input data-wct-input-range id="inputRotateX" min="-360" max="360"
+              data-ng-model="ctrl.data.rotateX" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputRotateY">Rotate Y</label>
+              <input data-wct-input-range id="inputRotateY" min="-360" max="360"
+              data-ng-model="ctrl.data.rotateY" data-abm-form-control>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <h3>Preview</h3>
+
+    <div class="preview preview-full" style="{{ctrl.parentCss()}}">
+      <div class="preview-child" style="{{ctrl.childCss()}}">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, elit eu eleifend blandit, enim sem porta ex, sit amet porttitor ex felis a lacus. Vivamus ornare at libero sed vestibulum.</p>
+      </div>
+    </div>
+
+    <side-ad></side-ad>
+
+    <h3>Code</h3>
+
+    <section-code code-id="parent-css" title="Add this to the parent element."
+      code="{{ctrl.parentCss()}}"></section-code>
+
+    <section-code code-id="child-css" title="Add this to the child element."
+      code="{{ctrl.childCss()}}"></section-code>
+  </div>
+</div>

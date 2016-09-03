@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="HtmlBaseLinkController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <browser-support></browser-support>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputBaseUrl">Base URL</label>
+              <input data-wct-input-text id="inputBaseUrl"
+              data-ng-model="ctrl.data.baseUrl" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectTarget">Target</label>
+              <select data-wct-select id="selectTarget"
+              data-ng-model="ctrl.data.target" data-abm-form-control>
+                <option value="_blank">Blank (new window)</option>
+                <option value="_self">Self</option>
+                <option value="_parent">Parent</option>
+                <option value="_top">Top</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <h3>Preview</h3>
+
+    <div class="alert alert-info">
+      The <code>&lt;base&gt;</code> element is not a visible element in a webpage.
+      Use the code below in your <code>&lt;head&gt;</code> tag.
+    </div>
+
+    <side-ad></side-ad>
+
+    <h3>Code</h3>
+
+    <section-code code-id="element-html" code="{{ctrl.elementHtml()}}"></section-code>
+  </div>
+</div>

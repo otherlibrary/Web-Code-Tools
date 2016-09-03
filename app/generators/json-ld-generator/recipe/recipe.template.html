@@ -1,0 +1,96 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="JsonLdRecipeController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputRecipeName">Recipe Name</label>
+              <input data-wct-input-text id="inputRecipeName"
+              data-ng-model="ctrl.data.recipeName" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputPhoto">Photo (URL)</label>
+              <input data-wct-input-text id="inputPhoto" placeholder="Image of the completed dish."
+              data-ng-model="ctrl.data.photo" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputCreator">Creator</label>
+              <input data-wct-input-text id="inputCreator" placeholder="The creator of the recipe."
+              data-ng-model="ctrl.data.creator" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputDescription">Description</label>
+              <textarea data-wct-textarea id="inputDescription" rows="3" maxlength="2000"
+              data-ng-model="ctrl.data.description" data-abm-form-control required></textarea>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputIngredients">Ingredients (1 Per Line)</label>
+              <textarea data-wct-textarea id="inputIngredients" rows="5" maxlength="2000"
+              data-ng-model="ctrl.data.ingredients" data-abm-form-control required></textarea>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-4">
+              <label data-wct-label for="inputPrepTime">Prep Time (Minutes)</label>
+              <input data-wct-input-text id="inputPrepTime" placeholder="i.e. 10"
+              data-ng-model="ctrl.data.prepTime" data-abm-form-control required>
+            </div>
+            <div class="col-sm-4">
+              <label data-wct-label for="inputCookTime">Cook Time (HH:MM)</label>
+              <input data-wct-input-text id="inputCookTime" placeholder="i.e. 1:10"
+              data-ng-model="ctrl.data.cookTime" data-abm-form-control required>
+            </div>
+            <div class="col-sm-4">
+              <label data-wct-label for="inputTotalTime">Total Time (HH:MM)</label>
+              <input data-wct-input-text id="inputTotalTime" placeholder="i.e. 1:20"
+              data-ng-model="ctrl.data.totalTime" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputYield">Yield (Servings)</label>
+              <input data-wct-input-text id="inputYield" placeholder="1 pizza (4 servings)"
+              data-ng-model="ctrl.data.yield" data-abm-form-control required>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-6">
+              <label data-wct-label for="inputCalories">Calories</label>
+              <input data-wct-input-text id="inputCalories"
+              data-ng-model="ctrl.data.calories" data-abm-form-control>
+            </div>
+            <div class="col-sm-6">
+              <label data-wct-label for="inputFat">Fat</label>
+              <input data-wct-input-text id="inputFat" placeholder="i.e. 5 g"
+              data-ng-model="ctrl.data.fat" data-abm-form-control>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6">
+    <h3>Code</h3>
+
+    <section-code code-id="json-ld" code="{{ctrl.jsonLd()}}"></section-code>
+
+    <side-ad></side-ad>
+  </div>
+</div>

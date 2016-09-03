@@ -1,0 +1,105 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="HtmlVideoController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <browser-support></browser-support>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputSourceMp4">Source (MP4)</label>
+              <input data-wct-input-text id="inputSourceMp4"
+              data-ng-model="ctrl.data.sourceMp4" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputSourceOgv">Source (OGV)</label>
+              <input data-wct-input-text id="inputSourceOgv"
+              data-ng-model="ctrl.data.sourceOgv" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputSourceWebM">Source (WebM)</label>
+              <input data-wct-input-text id="inputSourceWebM"
+              data-ng-model="ctrl.data.sourceWebM" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputHeight">Height (px) - 0 for none</label>
+              <input data-wct-input-range id="inputHeight" min="0" max="1000"
+              data-ng-model="ctrl.data.height" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputWidth">Width (px) - 0 for none</label>
+              <input data-wct-input-range id="inputWidth" min="0" max="1000"
+              data-ng-model="ctrl.data.width" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectControls">Controls</label>
+              <select data-wct-select id="selectControls"
+              data-ng-model="ctrl.data.controls" data-abm-form-control>
+                <option value="">No</option>
+                <option value="controls">Yes</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectAutoplay">Autoplay</label>
+              <select data-wct-select id="selectAutoplay"
+              data-ng-model="ctrl.data.autoplay" data-abm-form-control>
+                <option value="">No</option>
+                <option value="autoplay">Yes</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectLoop">Loop</label>
+              <select data-wct-select id="selectLoop"
+              data-ng-model="ctrl.data.loop" data-abm-form-control>
+                <option value="">No</option>
+                <option value="loop">Yes</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectMuted">Muted</label>
+              <select data-wct-select id="selectMuted"
+              data-ng-model="ctrl.data.muted" data-abm-form-control>
+                <option value="">No</option>
+                <option value="muted">Yes</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <h3>Preview</h3>
+
+    <div class="preview-html" ng-bind-html="ctrl.elementHtml() | rawHtml"></div>
+
+    <side-ad></side-ad>
+
+    <h3>Code</h3>
+
+    <section-code code-id="element-html" code="{{ctrl.elementHtml()}}"></section-code>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<section data-ng-controller="SitemapController as ctrl">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <header>
+        <h1 class="page-header" data-ng-bind="pageTitle"></h1>
+      </header>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <h2>CSS Generator</h2>
+      <div data-ng-repeat="generatorCategory in ctrl.cssGenerators" class="sitemap-section">
+        <span class="sitemap-section-title">{{generatorCategory.name}}</span>
+        <div data-ng-repeat="generator in generatorCategory.generators">
+          <a data-ui-sref="css-generator.{{generator.routeName}}">
+            {{generator.name}}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <h2>HTML Generator</h2>
+      <div data-ng-repeat="generatorCategory in ctrl.htmlGenerators" class="sitemap-section">
+        <span class="sitemap-section-title">{{generatorCategory.name}}</span>
+        <div data-ng-repeat="generator in generatorCategory.generators">
+          <a data-ui-sref="html-generator.{{generator.routeName}}">
+            {{generator.name}}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <h2>Microdata Generator</h2>
+      <div data-ng-repeat="generator in ctrl.microdataGenerators">
+        <a data-ui-sref="microdata-generator.{{generator.routeName}}">
+          {{generator.name}}
+        </a>
+      </div>
+
+      <h2>JSON-LD Generator</h2>
+      <div data-ng-repeat="generator in ctrl.jsonLdGenerators">
+        <a data-ui-sref="json-ld-generator.{{generator.routeName}}">
+          {{generator.name}}
+        </a>
+      </div>
+
+      <h2>Meta Tags Generator</h2>
+      <a data-ui-sref="meta-tags-generator">
+        Meta Tags Generator
+      </a>
+
+      <h2>Open Graph Generator</h2>
+      <a data-ui-sref="open-graph-generator">
+        Open Graph Generator
+      </a>
+
+      <h2>Twitter Card Generator</h2>
+      <a data-ui-sref="twitter-card-generator">
+        Twitter Card Generator
+      </a>
+    </div>
+  </div>
+</section>

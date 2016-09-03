@@ -1,0 +1,27 @@
+<section>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <header>
+        <h1 class="page-header" data-ng-bind="pageTitle"></h1>
+      </header>
+    </div>
+  </div>
+
+  <div data-ui-view>
+    <div class="row">
+      <div class="col-xs-12">
+        <top-ad></top-ad>
+      </div>
+    </div>
+    
+    <div data-ng-controller="JsonLdGeneratorHomeController">
+      <div class="row">
+        <div data-ng-repeat="generator in generatorData" class="col-xs-12 col-sm-6 col-lg-4 angular-animate animate-repeat">
+          <a class="btn btn-default btn-lg btn-block btn-raised" data-ui-sref="json-ld-generator.{{generator.routeName}}">
+            {{generator.name}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

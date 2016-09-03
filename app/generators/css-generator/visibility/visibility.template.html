@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="CssVisibilityController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <browser-support></browser-support>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectVisibility">Visibility</label>
+              <select data-wct-select id="selectVisibility"
+              data-ng-model="ctrl.data.visibility" data-abm-form-control>
+                <option value="visible">Visible</option>
+                <option value="hidden">Hidden</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="alert alert-warning">
+        <strong>Heads up!</strong> Changing the visibility of an element doesn't
+        remove the space it takes on the page. To hide an element that does
+        not take any space, use the <a data-ng-href="#css-generator/display">display</a> property.
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <h3>Preview</h3>
+
+    <div class="preview preview-full" style="{{ctrl.elementCss()}}"></div>
+
+    <side-ad></side-ad>
+
+    <h3>Code</h3>
+
+    <section-code code-id="element-css" title="Add this to the element that you want to change the visibility."
+      code="{{ctrl.elementCss()}}"></section-code>
+  </div>
+</div>

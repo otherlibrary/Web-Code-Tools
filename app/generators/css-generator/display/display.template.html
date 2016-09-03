@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="CssDisplayController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <browser-support></browser-support>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectDisplay">Display</label>
+              <select data-wct-input-number id="selectDisplay"
+              data-ng-model="ctrl.data.display" data-abm-form-control>
+                <option value="block">Block</option>
+                <option value="inline">Inline</option>
+                <option value="inline-block">Inline-block</option>
+                <option value="list-item">List-item</option>
+                <option value="table">Table</option>
+                <option value="none">None</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="alert alert-info">
+        Does not include table specific displays, because they should be used
+        only within an element with <code>display: table;</code>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <h3>Preview</h3>
+
+    <div class="alert alert-dismissible alert-warning">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <strong>Heads up!</strong> Results may vary on your website. This
+      is simply to show you how each display changes the element.
+    </div>
+
+    <div class="preview preview-full" style="{{ctrl.elementCss()}}">
+      <p>Just some text inside the element.</p>
+    </div>
+
+    <side-ad></side-ad>
+
+    <h3>Code</h3>
+
+    <section-code code-id="element-css" title="Add this to the element that you want to change the display."
+      code="{{ctrl.elementCss()}}"></section-code>
+  </div>
+</div>

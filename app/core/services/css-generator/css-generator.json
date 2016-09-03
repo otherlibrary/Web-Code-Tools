@@ -1,0 +1,228 @@
+[
+  {
+    "name": "Animation",
+    "generators":
+    [
+      {
+        "name": "Animation",
+        "routeName": "animation"
+      }
+    ]
+  },
+  {
+    "name": "Background",
+    "generators":
+    [
+      {
+        "name": "Background Color",
+        "routeName": "background-color"
+      },
+      {
+        "name": "Background Gradient",
+        "routeName": "background-gradient"
+      },
+      {
+        "name": "Background Image",
+        "routeName": "background-image"
+      }
+    ]
+  },
+  {
+    "name": "Border",
+    "generators":
+    [
+      {
+        "name": "Border",
+        "routeName": "border"
+      },
+      {
+        "name": "Border Image",
+        "routeName": "border-image"
+      },
+      {
+        "name": "Border Radius",
+        "routeName": "border-radius"
+      },
+      {
+        "name": "Box Resize",
+        "routeName": "box-resize"
+      },
+      {
+        "name": "Box Shadow",
+        "routeName": "box-shadow"
+      },
+      {
+        "name": "Outline",
+        "routeName": "outline"
+      },
+      {
+        "name": "Overflow (x, y)",
+        "routeName": "overflow"
+      },
+      {
+        "name": "Visibility",
+        "routeName": "visibility"
+      }
+    ]
+  },
+  {
+    "name": "Color",
+    "generators":
+    [
+      {
+        "name": "Opacity",
+        "routeName": "opacity"
+      }
+    ]
+  },
+  {
+    "name": "Filter",
+    "generators":
+    [
+      {
+        "name": "Blur",
+        "routeName": "blur"
+      },
+      {
+        "name": "Brightness",
+        "routeName": "brightness"
+      },
+      {
+        "name": "Contrast",
+        "routeName": "contrast"
+      },
+      {
+        "name": "Grayscale",
+        "routeName": "grayscale"
+      },
+      {
+        "name": "Hue-Rotate",
+        "routeName": "hue-rotate"
+      },
+      {
+        "name": "Invert",
+        "routeName": "invert"
+      },
+      {
+        "name": "Saturate",
+        "routeName": "saturate"
+      },
+      {
+        "name": "Sepia",
+        "routeName": "sepia"
+      }
+    ]
+  },
+  {
+    "name": "Layout",
+    "generators":
+    [
+      {
+        "name": "Columns",
+        "routeName": "columns"
+      },
+      {
+        "name": "Display",
+        "routeName": "display"
+      }
+    ]
+  },
+  {
+    "name": "List",
+    "generators":
+    [
+      {
+        "name": "List Style",
+        "routeName": "list-style"
+      }
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "generators":
+    [
+      {
+        "name": "Cursor",
+        "routeName": "cursor"
+      }
+    ]
+  },
+  {
+    "name": "Text",
+    "generators":
+    [
+      {
+        "name": "Letter Spacing",
+        "routeName": "letter-spacing"
+      },
+      {
+        "name": "Line Height",
+        "routeName": "line-height"
+      },
+      {
+        "name": "Tab Size",
+        "routeName": "tab-size"
+      },
+      {
+        "name": "Text Align",
+        "routeName": "text-align"
+      },
+      {
+        "name": "Text Decoration",
+        "routeName": "text-decoration"
+      },
+      {
+        "name": "Text Indent",
+        "routeName": "text-indent"
+      },
+      {
+        "name": "Text Shadow",
+        "routeName": "text-shadow"
+      },
+      {
+        "name": "Text Transform",
+        "routeName": "text-transform"
+      },
+      {
+        "name": "White Space",
+        "routeName": "white-space"
+      },
+      {
+        "name": "Word Break",
+        "routeName": "word-break"
+      },
+      {
+        "name": "Word Spacing",
+        "routeName": "word-spacing"
+      },
+      {
+        "name": "Word Wrap",
+        "routeName": "word-wrap"
+      }
+    ]
+  },
+  {
+    "name": "Transform",
+    "generators":
+    [
+      {
+        "name": "Perspective",
+        "routeName": "perspective"
+      },
+      {
+        "name": "Transform",
+        "routeName": "transform"
+      }
+    ]
+  },
+  {
+    "name": "Transition",
+    "generators":
+    [
+      {
+        "name": "Transition",
+        "routeName": "transition"
+      }
+    ]
+  }
+]

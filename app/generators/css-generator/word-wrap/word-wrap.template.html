@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="CssWordWrapController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <browser-support></browser-support>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectWordWrap">Word Wrap</label>
+              <select data-wct-select id="selectWordWrap"
+              data-ng-model="ctrl.data.wordWrap" data-abm-form-control>
+                <option value="normal">Normal</option>
+                <option value="break-word">Break Word</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <h3>Preview</h3>
+
+    <div class="preview preview-full">
+      <p style="{{ctrl.elementCss()}}">
+        This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery long word.
+      </p>
+    </div>
+
+    <side-ad></side-ad>
+
+    <h3>Code</h3>
+
+    <section-code code-id="element-css" title="Add this to the element where you want to change the word wrap."
+      code="{{ctrl.elementCss()}}"></section-code>
+  </div>
+</div>

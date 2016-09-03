@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Aggregate Offer",
+    "routeName": "aggregate-offer"
+  },
+  {
+    "name": "Aggregate Rating",
+    "routeName": "aggregate-rating"
+  },
+  {
+    "name": "Article",
+    "routeName": "article"
+  },
+  {
+    "name": "Event",
+    "routeName": "event"
+  },
+  {
+    "name": "Music Album",
+    "routeName": "music-album"
+  },
+  {
+    "name": "Music Playlist",
+    "routeName": "music-playlist"
+  },
+  {
+    "name": "Organization",
+    "routeName": "organization"
+  },
+  {
+    "name": "Person",
+    "routeName": "person"
+  },
+  {
+    "name": "Product Offer",
+    "routeName": "product-offer"
+  },
+  {
+    "name": "Recipe",
+    "routeName": "recipe"
+  },
+  {
+    "name": "Restaurant",
+    "routeName": "restaurant"
+  },
+  {
+    "name": "Review",
+    "routeName": "review"
+  },
+  {
+    "name": "Software Application",
+    "routeName": "software-application"
+  },
+  {
+    "name": "Video",
+    "routeName": "video"
+  }
+]

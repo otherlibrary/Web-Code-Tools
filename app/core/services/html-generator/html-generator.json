@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Input",
+    "generators":
+    [
+      {
+        "name": "Button",
+        "routeName": "button"
+      },
+      {
+        "name": "Checkbox & Radio Button",
+        "routeName": "input-checkbox-radio"
+      },
+      {
+        "name": "Color",
+        "routeName": "input-color"
+      },
+      {
+        "name": "Date & Time",
+        "routeName": "input-date-time"
+      },
+      {
+        "name": "Email",
+        "routeName": "input-email"
+      },
+      {
+        "name": "File Browser",
+        "routeName": "input-file"
+      },
+      {
+        "name": "Image Button",
+        "routeName": "input-image"
+      },
+      {
+        "name": "Number & Range (Slide)",
+        "routeName": "input-number-range"
+      },
+      {
+        "name": "Password",
+        "routeName": "input-password"
+      },
+      {
+        "name": "Search",
+        "routeName": "input-search"
+      },
+      {
+        "name": "Submit",
+        "routeName": "input-submit"
+      },
+      {
+        "name": "Telephone",
+        "routeName": "input-telephone"
+      },
+      {
+        "name": "Textarea",
+        "routeName": "textarea"
+      },
+      {
+        "name": "Text",
+        "routeName": "input-text"
+      },
+      {
+        "name": "URL",
+        "routeName": "input-url"
+      }
+    ]
+  },
+  {
+    "name": "Media",
+    "generators":
+    [
+      {
+        "name": "Audio",
+        "routeName": "audio"
+      },
+      {
+        "name": "Image",
+        "routeName": "image"
+      },
+      {
+        "name": "Video",
+        "routeName": "video"
+      }
+    ]
+  },
+  {
+    "name": "Text",
+    "generators":
+    [
+      {
+        "name": "Bold",
+        "routeName": "text-bold"
+      },
+      {
+        "name": "Cite",
+        "routeName": "text-cite"
+      },
+      {
+        "name": "Mark (Highlight)",
+        "routeName": "text-mark"
+      },
+      {
+        "name": "Italic",
+        "routeName": "text-italic"
+      },
+      {
+        "name": "Incorrect Text (Strikethrough)",
+        "routeName": "text-incorrect"
+      },
+      {
+        "name": "Underline",
+        "routeName": "text-underline"
+      },
+      {
+        "name": "Bi-Directional Override",
+        "routeName": "text-bi-directional-override"
+      },
+      {
+        "name": "Quote & Blockquote",
+        "routeName": "text-quote"
+      },
+      {
+        "name": "Code",
+        "routeName": "text-code"
+      },
+      {
+        "name": "Superscript & Subscript",
+        "routeName": "text-superscript-subscript"
+      }
+    ]
+  },
+  {
+    "name": "Other Elements",
+    "generators":
+    [
+      {
+        "name": "Meter",
+        "routeName": "meter"
+      },
+      {
+        "name": "Details",
+        "routeName": "details"
+      },
+      {
+        "name": "Dialog",
+        "routeName": "dialog"
+      },
+      {
+        "name": "IFrame",
+        "routeName": "iframe"
+      },
+      {
+        "name": "Progress Bar",
+        "routeName": "progress-bar"
+      },
+      {
+        "name": "Hyperlink",
+        "routeName": "hyperlink"
+      }
+    ]
+  },
+  {
+    "name": "Other",
+    "generators":
+    [
+      {
+        "name": "Base Link",
+        "routeName": "base-link"
+      }
+    ]
+  }
+]

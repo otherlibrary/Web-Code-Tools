@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-xs-12">
+    <top-ad></top-ad>
+  </div>
+</div>
+
+<div class="row" data-ng-controller="CssOutlineController as ctrl">
+  <div class="col-xs-12 col-md-6">
+    <div class="well">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Fill in required fields.</legend>
+          <browser-support></browser-support>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputColor">Color</label>
+              <input data-wct-input-text id="inputColor" colorpicker="hex"
+              data-ng-model="ctrl.data.color" data-abm-form-control>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="selectStyle">Style</label>
+              <select data-wct-select id="selectStyle"
+              data-ng-model="ctrl.data.style" data-abm-form-control>
+                <option value="dashed">Dashed</option>
+                <option value="dotted">Dotted</option>
+                <option value="double">Double</option>
+                <option value="groove">Groove</option>
+                <option value="inset">Inset</option>
+                <option value="outset">Outset</option>
+                <option value="ridge">Ridge</option>
+                <option value="solid">Solid</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" data-abm-form-group>
+            <div class="col-sm-12">
+              <label data-wct-label for="inputWidth">Width</label>
+              <input data-wct-input-range id="inputWidth" min="1" max="100"
+              data-ng-model="ctrl.data.width" data-abm-form-control>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <h3>Preview</h3>
+
+    <div class="preview preview-full" style="{{ctrl.elementCss()}}"></div>
+
+    <side-ad></side-ad>
+
+    <h3>Code</h3>
+
+    <section-code code-id="element-css" title="Add this to the element that you want to add an outline to."
+      code="{{ctrl.elementCss()}}"></section-code>
+  </div>
+</div>

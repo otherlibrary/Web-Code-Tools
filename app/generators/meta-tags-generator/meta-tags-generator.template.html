@@ -1,0 +1,69 @@
+<section>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <header>
+        <h1 class="page-header" data-ng-bind="pageTitle"></h1>
+      </header>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <top-ad></top-ad>
+    </div>
+  </div>
+
+  <div class="row" data-ng-controller="MetaTagsController as ctrl">
+    <div class="col-xs-12 col-sm-6">
+      <div class="well">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Fill in required fields.</legend>
+            <div class="form-group" data-abm-form-group>
+              <div class="col-sm-12">
+                <label data-wct-label for="inputPageTitle">Page Title</label>
+                <input data-wct-input-text id="inputPageTitle"
+                data-ng-model="ctrl.data.pageTitle" data-abm-form-control required>
+              </div>
+            </div>
+            <div class="form-group" data-abm-form-group>
+              <div class="col-sm-12">
+                <label data-wct-label for="inputDescription">Description</label>
+                <textarea data-wct-textarea id="inputDescription"
+                placeholder="Up to  160 characters." rows="3" maxlength="160"
+                data-ng-model="ctrl.data.description" data-abm-form-control required></textarea>
+              </div>
+            </div>
+            <div class="form-group" data-abm-form-group>
+              <div class="col-sm-12">
+                <label data-wct-label for="selectIndex">What to Index</label>
+                <select data-wct-select id="selectIndex"
+                data-ng-model="ctrl.data.index" data-abm-form-control>
+                  <option value="index, follow">Index this page &amp; follow the links</option>
+                  <option value="index, nofollow">Index this page only</option>
+                  <option value="noindex, follow">Not this page, but follow the links</option>
+                  <option value="noindex, nofollow">Don't index this page or follow the links</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group" data-abm-form-group>
+              <div class="col-sm-12">
+                <label data-wct-label for="inputAuthor">Author</label>
+                <input data-wct-input-text id="inputAuthor" placeholder="Author of the web page."
+                data-ng-model="ctrl.data.author" data-abm-form-control required>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <h3>Code</h3>
+
+      <section-code code-id="element-html" code="{{ctrl.elementHtml()}}"></section-code>
+
+      <side-ad></side-ad>
+    </div>
+  </div>
+</section>
