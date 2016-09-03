@@ -43,7 +43,7 @@
           url: '/',
           templateUrl: 'pages/dashboard/dashboard.template.html',
           title: 'Dashboard',
-          description: 'The ultimate, and we mean super awesome web code generator. Generate anything from HTML, CSS, Microdata, Twitter Cards, Open Graph and more! No coding required.',
+          description: 'The ultimate web code generator. Generate HTML5, CSS3, Microdata, JSON-LD, Twitter Cards, Open Graph and more! No coding skills required.',
           ncyBreadcrumb: {
             label: 'Dashboard'
           }
