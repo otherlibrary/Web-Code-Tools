@@ -14,7 +14,7 @@
 
         alertService.getAlertsQueue().then(function(data) {
           ctrl.alertsQueue = data.alerts;
-          $timeout(displayAlert, 2000);
+          $timeout(displayAlert, 10000);
         });
 
         // Displays the alert.
