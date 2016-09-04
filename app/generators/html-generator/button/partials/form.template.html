@@ -1,0 +1,66 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectType">Type</label>
+    <select data-wct-select id="selectType"
+    data-ng-model="ctrl.data.type" data-abm-form-control>
+      <option value="button">Button</option>
+      <option value="submit">Submit</option>
+      <option value="reset">Reset</option>
+    </select>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputText">Text</label>
+    <input data-wct-input-text id="inputText"
+    data-ng-model="ctrl.data.text" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputName">Name</label>
+    <input data-wct-input-text id="inputName"
+    data-ng-model="ctrl.data.name" data-abm-form-control>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectTarget">Target</label>
+    <select data-wct-select id="selectTarget"
+    data-ng-model="ctrl.data.target" data-abm-form-control>
+      <option value="_self">Self</option>
+      <option value="_blank">Blank</option>
+      <option value="_parent">Parent</option>
+      <option value="_top">Top</option>
+    </select>
+  </div>
+</div>
+<div data-ng-if="this.data.type == 'submit'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputFormAction">Form Action</label>
+      <input data-wct-input-text id="inputFormAction" placeholder="URL (optional)"
+      data-ng-model="ctrl.data.formAction" data-abm-form-control>
+    </div>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectAutoFocus">Autofocus</label>
+    <select data-wct-select id="selectAutoFocus"
+    data-ng-model="ctrl.data.autoFocus" data-abm-form-control>
+      <option value="">No</option>
+      <option value="autofocus">Yes</option>
+    </select>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectDisabled">Disabled</label>
+    <select data-wct-select id="selectDisabled"
+    data-ng-model="ctrl.data.disabled" data-abm-form-control>
+      <option value="">No</option>
+      <option value="disabled">Yes</option>
+    </select>
+  </div>
+</div>

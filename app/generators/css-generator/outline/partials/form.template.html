@@ -1,0 +1,30 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputColor">Color</label>
+    <input data-wct-input-text id="inputColor" colorpicker="hex"
+    data-ng-model="ctrl.data.color" data-abm-form-control>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectStyle">Style</label>
+    <select data-wct-select id="selectStyle"
+    data-ng-model="ctrl.data.style" data-abm-form-control>
+      <option value="dashed">Dashed</option>
+      <option value="dotted">Dotted</option>
+      <option value="double">Double</option>
+      <option value="groove">Groove</option>
+      <option value="inset">Inset</option>
+      <option value="outset">Outset</option>
+      <option value="ridge">Ridge</option>
+      <option value="solid">Solid</option>
+    </select>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputWidth">Width</label>
+    <input data-wct-input-range id="inputWidth" min="1" max="100"
+    data-ng-model="ctrl.data.width" data-abm-form-control>
+  </div>
+</div>

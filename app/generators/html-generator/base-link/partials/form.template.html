@@ -1,0 +1,19 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputBaseUrl">Base URL</label>
+    <input data-wct-input-text id="inputBaseUrl"
+    data-ng-model="ctrl.data.baseUrl" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectTarget">Target</label>
+    <select data-wct-select id="selectTarget"
+    data-ng-model="ctrl.data.target" data-abm-form-control>
+      <option value="_blank">Blank (new window)</option>
+      <option value="_self">Self</option>
+      <option value="_parent">Parent</option>
+      <option value="_top">Top</option>
+    </select>
+  </div>
+</div>

@@ -1,50 +1,6 @@
-<div class="row">
-  <div class="col-xs-12">
-    <top-ad></top-ad>
-  </div>
-</div>
-
-<div class="row" data-ng-controller="CssTextAlignController as ctrl">
-  <div class="col-xs-12 col-md-6">
-    <div class="well">
-      <form class="form-horizontal">
-        <fieldset>
-          <legend>Fill in required fields.</legend>
-          <browser-support></browser-support>
-          <div class="form-group" data-abm-form-group>
-            <div class="col-sm-12">
-              <label data-wct-label for="selectTextAlign">Text Alignment</label>
-              <select data-wct-select id="selectTextAlign"
-              data-ng-model="ctrl.data.align" data-abm-form-control>
-                <option value="left">Left</option>
-                <option value="center">Center</option>
-                <option value="right">Right</option>
-                <option value="justify">Justify</option>
-              </select>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-
-  <div class="col-xs-12 col-md-6">
-    <h3>Preview</h3>
-
-    <div class="preview preview-full">
-      <p style="{{ctrl.elementCss()}}">Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Nullam sed lobortis enim. Morbi fermentum
-      turpis dui, ac lacinia diam venenatis eget. Vivamus in leo in enim suscipit
-      commodo. Vivamus vel dui at metus tristique tempus. Sed hendrerit ante non
-      tortor dictum, eget posuere ante faucibus. Integer et mattis est.
-      Aliquam erat volutpat. Morbi a leo massa.</p>
-    </div>
-
-    <side-ad></side-ad>
-
-    <h3>Code</h3>
-
-    <section-code code-id="element-css" title="Add this to the element where you want to change the text alignment."
-      code="{{ctrl.elementCss()}}"></section-code>
-  </div>
-</div>
+<generator data-controller-name="CssTextAlignController"
+  data-generator-form="generators/css-generator/text-align/partials/form.template.html"
+  data-generator-preview="generators/css-generator/text-align/partials/preview.template.html"
+  data-generator-code="generators/css-generator/text-align/partials/code.template.html"
+  data-browser-support>
+</generator>

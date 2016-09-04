@@ -9,7 +9,7 @@
       .state('html-generator.audio', {
         url: '/audio',
         templateUrl: 'generators/html-generator/audio/audio.template.html',
-        title: 'HTML Audio Generator',
+        title: 'HTML5 Audio Generator',
         description: 'Generate an HTML5 audio element to play sound or music on your website. Autoplay or loop, it\'s your choice! Preview, test, and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Audio'
@@ -38,7 +38,7 @@
       .state('html-generator.details', {
         url: '/details',
         templateUrl: 'generators/html-generator/details/details.template.html',
-        title: 'HTML Details Generator',
+        title: 'HTML5 Details Generator',
         ncyBreadcrumb: {
           label: 'Details'
         }
@@ -47,7 +47,7 @@
       .state('html-generator.dialog', {
         url: '/dialog',
         templateUrl: 'generators/html-generator/dialog/dialog.template.html',
-        title: 'HTML Dialog Generator',
+        title: 'HTML5 Dialog Generator',
         ncyBreadcrumb: {
           label: 'Dialog'
         }
@@ -94,7 +94,7 @@
       .state('html-generator.input-color', {
         url: '/input-color',
         templateUrl: 'generators/html-generator/input-color/input-color.template.html',
-        title: 'HTML Color Input Generator',
+        title: 'HTML5 Color Input Generator',
         ncyBreadcrumb: {
           label: 'Color Input'
         }
@@ -103,7 +103,7 @@
       .state('html-generator.input-date-time', {
         url: '/input-date-time',
         templateUrl: 'generators/html-generator/input-date-time/input-date-time.template.html',
-        title: 'HTML Date & Time Input Generator',
+        title: 'HTML5 Date & Time Input Generator',
         ncyBreadcrumb: {
           label: 'Date & Time Input'
         }
@@ -112,7 +112,7 @@
       .state('html-generator.input-email', {
         url: '/input-email',
         templateUrl: 'generators/html-generator/input-email/input-email.template.html',
-        title: 'HTML Email Input Generator',
+        title: 'HTML5 Email Input Generator',
         description: 'Generate an HTML5 email input. Some browsers validate the email address, and mobile browsers show an email-type keyboard. Preview and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Email Input'
@@ -140,7 +140,7 @@
       .state('html-generator.input-number-range', {
         url: '/input-number-range',
         templateUrl: 'generators/html-generator/input-number-range/input-number-range.template.html',
-        title: 'HTML Number & Range Input Generator',
+        title: 'HTML5 Number & Range Input Generator',
         ncyBreadcrumb: {
           label: 'Number & Range Input'
         }
@@ -158,7 +158,7 @@
       .state('html-generator.input-search', {
         url: '/input-search',
         templateUrl: 'generators/html-generator/input-search/input-search.template.html',
-        title: 'HTML Search Input Generator',
+        title: 'HTML5 Search Input Generator',
         ncyBreadcrumb: {
           label: 'Search Input'
         }
@@ -176,7 +176,7 @@
       .state('html-generator.input-telephone', {
         url: '/input-telephone',
         templateUrl: 'generators/html-generator/input-telephone/input-telephone.template.html',
-        title: 'HTML Telephone Input Generator',
+        title: 'HTML5 Telephone Input Generator',
         ncyBreadcrumb: {
           label: 'Telephone Input'
         }
@@ -194,7 +194,7 @@
       .state('html-generator.input-url', {
         url: '/input-url',
         templateUrl: 'generators/html-generator/input-url/input-url.template.html',
-        title: 'HTML URL Input Generator',
+        title: 'HTML5 URL Input Generator',
         ncyBreadcrumb: {
           label: 'URL Input'
         }
@@ -203,7 +203,7 @@
       .state('html-generator.meter', {
         url: '/meter',
         templateUrl: 'generators/html-generator/meter/meter.template.html',
-        title: 'HTML Meter Generator',
+        title: 'HTML5 Meter Generator',
         ncyBreadcrumb: {
           label: 'Meter'
         }
@@ -212,7 +212,7 @@
       .state('html-generator.progress-bar', {
         url: '/progress-bar',
         templateUrl: 'generators/html-generator/progress-bar/progress-bar.template.html',
-        title: 'HTML Progress Bar Generator',
+        title: 'HTML5 Progress Bar Generator',
         ncyBreadcrumb: {
           label: 'Progress Bar'
         }
@@ -275,7 +275,7 @@
       .state('html-generator.text-incorrect', {
         url: '/text-incorrect',
         templateUrl: 'generators/html-generator/text-incorrect/text-incorrect.template.html',
-        title: 'HTML Incorrect (Strikethrough) Text Generator',
+        title: 'HTML5 Incorrect (Strikethrough) Text Generator',
         ncyBreadcrumb: {
           label: 'Incorrect Text'
         }
@@ -284,7 +284,7 @@
       .state('html-generator.text-mark', {
         url: '/text-mark',
         templateUrl: 'generators/html-generator/text-mark/text-mark.template.html',
-        title: 'HTML Marked (Highlighted) Text Generator',
+        title: 'HTML5 Marked (Highlighted) Text Generator',
         ncyBreadcrumb: {
           label: 'Marked Text'
         }
@@ -320,7 +320,7 @@
       .state('html-generator.video', {
         url: '/video',
         templateUrl: 'generators/html-generator/video/video.template.html',
-        title: 'HTML Video Generator',
+        title: 'HTML5 Video Generator',
         description: 'Generate an HTML5 video element to play a video on your website. Autoplay, muted or loop, it\'s your choice! Preview, test, and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Video'

@@ -1,0 +1,36 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputUrl">URL</label>
+    <input data-wct-input-text id="inputUrl"
+    data-ng-model="ctrl.data.url" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectTarget">Target</label>
+    <select data-wct-select id="selectTarget"
+    data-ng-model="ctrl.data.target" data-abm-form-control>
+      <option value="_blank">Blank (new window)</option>
+      <option value="_self">Self</option>
+      <option value="_parent">Parent</option>
+      <option value="_top">Top</option>
+    </select>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputText">Text</label>
+    <input data-wct-input-text id="inputText"
+    data-ng-model="ctrl.data.text" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectFollow">Allow Search Engines to Follow This Link?</label>
+    <select data-wct-select id="selectFollow"
+    data-ng-model="ctrl.data.follow" data-abm-form-control>
+      <option value="">Yes</option>
+      <option value=" rel=&quot;nofollow&quot;">No</option>
+    </select>
+  </div>
+</div>

@@ -8,7 +8,7 @@
       .state('css-generator.animation', {
         url: '/animation',
         templateUrl: 'generators/css-generator/animation/animation.template.html',
-        title: 'CSS Animation Generator',
+        title: 'CSS3 Animation Generator',
         description: 'Generate CSS3 keyframe animations with our online CSS generator tool. Preview the result live, and copy the generated code to your website. No coding required!',
         ncyBreadcrumb: {
           label: 'Animation'
@@ -27,7 +27,7 @@
       .state('css-generator.background-gradient', {
         url: '/background-gradient',
         templateUrl: 'generators/css-generator/background-gradient/background-gradient.template.html',
-        title: 'CSS Background Gradient Generator',
+        title: 'CSS3 Background Gradient Generator',
         description: 'Generate CSS3 linear and radial background gradients with our online CSS generator tool. Preview the live result, and copy the generated code to your website.',
         ncyBreadcrumb: {
           label: 'Background Gradient'
@@ -46,7 +46,7 @@
       .state('css-generator.blur', {
         url: '/blur',
         templateUrl: 'generators/css-generator/blur/blur.template.html',
-        title: 'CSS Blur Filter Generator',
+        title: 'CSS3 Blur Filter Generator',
         ncyBreadcrumb: {
           label: 'Blur'
         }
@@ -65,7 +65,7 @@
       .state('css-generator.border-image', {
         url: '/border-image',
         templateUrl: 'generators/css-generator/border-image/border-image.template.html',
-        title: 'CSS Border Image Generator',
+        title: 'CSS3 Border Image Generator',
         ncyBreadcrumb: {
           label: 'Border Image'
         }
@@ -74,7 +74,7 @@
       .state('css-generator.border-radius', {
         url: '/border-radius',
         templateUrl: 'generators/css-generator/border-radius/border-radius.template.html',
-        title: 'CSS Border Radius Generator',
+        title: 'CSS3 Border Radius Generator',
         description: 'Generate a CSS3 border radius to round corners of any HTML element using our online CSS generator tool. Preview live and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Border Radius'
@@ -84,7 +84,7 @@
       .state('css-generator.box-resize', {
         url: '/box-resize',
         templateUrl: 'generators/css-generator/box-resize/box-resize.template.html',
-        title: 'CSS Box Resize Generator',
+        title: 'CSS3 Box Resize Generator',
         ncyBreadcrumb: {
           label: 'Box Resize'
         }
@@ -93,7 +93,7 @@
       .state('css-generator.box-shadow', {
         url: '/box-shadow',
         templateUrl: 'generators/css-generator/box-shadow/box-shadow.template.html',
-        title: 'CSS Box Shadow Generator',
+        title: 'CSS3 Box Shadow Generator',
         description: 'Generate a CSS3 box shadow with our online CSS generator tool. Preview the result and copy the code to your website. No coding skills required!',
         ncyBreadcrumb: {
           label: 'Box Shadow'
@@ -103,7 +103,7 @@
       .state('css-generator.brightness', {
         url: '/brightness',
         templateUrl: 'generators/css-generator/brightness/brightness.template.html',
-        title: 'CSS Brightness Filter Generator',
+        title: 'CSS3 Brightness Filter Generator',
         ncyBreadcrumb: {
           label: 'Brightness'
         }
@@ -112,7 +112,7 @@
       .state('css-generator.contrast', {
         url: '/contrast',
         templateUrl: 'generators/css-generator/contrast/contrast.template.html',
-        title: 'CSS Contrast Filter Generator',
+        title: 'CSS3 Contrast Filter Generator',
         ncyBreadcrumb: {
           label: 'Contrast'
         }
@@ -121,7 +121,7 @@
       .state('css-generator.columns', {
         url: '/columns',
         templateUrl: 'generators/css-generator/columns/columns.template.html',
-        title: 'CSS Columns Generator',
+        title: 'CSS3 Columns Generator',
         ncyBreadcrumb: {
           label: 'Columns'
         }
@@ -157,7 +157,7 @@
       .state('css-generator.hue-rotate', {
         url: '/hue-rotate',
         templateUrl: 'generators/css-generator/hue-rotate/hue-rotate.template.html',
-        title: 'CSS Hue-Rotate Filter Generator',
+        title: 'CSS3 Hue-Rotate Filter Generator',
         ncyBreadcrumb: {
           label: 'Hue-Rotate'
         }
@@ -166,7 +166,7 @@
       .state('css-generator.invert', {
         url: '/invert',
         templateUrl: 'generators/css-generator/invert/invert.template.html',
-        title: 'CSS Invert Filter Generator',
+        title: 'CSS3 Invert Filter Generator',
         ncyBreadcrumb: {
           label: 'Invert'
         }
@@ -229,7 +229,7 @@
       .state('css-generator.perspective', {
         url: '/perspective',
         templateUrl: 'generators/css-generator/perspective/perspective.template.html',
-        title: 'CSS Perspective Generator',
+        title: 'CSS3 Perspective Generator',
         ncyBreadcrumb: {
           label: 'Perspective'
         }
@@ -238,7 +238,7 @@
       .state('css-generator.saturate', {
         url: '/saturate',
         templateUrl: 'generators/css-generator/saturate/saturate.template.html',
-        title: 'CSS Saturate Filter Generator',
+        title: 'CSS3 Saturate Filter Generator',
         ncyBreadcrumb: {
           label: 'Saturate'
         }
@@ -247,7 +247,7 @@
       .state('css-generator.sepia', {
         url: '/sepia',
         templateUrl: 'generators/css-generator/sepia/sepia.template.html',
-        title: 'CSS Sepia Filter Generator',
+        title: 'CSS3 Sepia Filter Generator',
         ncyBreadcrumb: {
           label: 'Sepia'
         }
@@ -256,7 +256,7 @@
       .state('css-generator.tab-size', {
         url: '/tab-size',
         templateUrl: 'generators/css-generator/tab-size/tab-size.template.html',
-        title: 'CSS Tab Size Generator',
+        title: 'CSS3 Tab Size Generator',
         ncyBreadcrumb: {
           label: 'Tab Size'
         }
@@ -292,7 +292,7 @@
       .state('css-generator.text-shadow', {
         url: '/text-shadow',
         templateUrl: 'generators/css-generator/text-shadow/text-shadow.template.html',
-        title: 'CSS Text Shadow Generator',
+        title: 'CSS3 Text Shadow Generator',
         description: 'Generate a CSS3 text shadow for any text with our online CSS generator tool. Preview the result live and copy the code to your website. No coding required!',
         ncyBreadcrumb: {
           label: 'Text Shadow'
@@ -311,7 +311,7 @@
       .state('css-generator.transform', {
         url: '/transform',
         templateUrl: 'generators/css-generator/transform/transform.template.html',
-        title: 'CSS Transform Generator',
+        title: 'CSS3 Transform Generator',
         description: 'Generate CSS3 code to transform the rotation, skew and scale of any element with our CSS generator. Preview the result live and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Transform'
@@ -321,7 +321,7 @@
       .state('css-generator.transition', {
         url: '/transition',
         templateUrl: 'generators/css-generator/transition/transition.template.html',
-        title: 'CSS Transition Generator',
+        title: 'CSS3 Transition Generator',
         description: 'Generate CSS3 code to smoothly transition an element from one state to another using our online CSS generator tool. Preview and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Transition'
@@ -349,7 +349,7 @@
       .state('css-generator.word-break', {
         url: '/word-break',
         templateUrl: 'generators/css-generator/word-break/word-break.template.html',
-        title: 'CSS Word Break Generator',
+        title: 'CSS3 Word Break Generator',
         ncyBreadcrumb: {
           label: 'Word Break'
         }
@@ -367,7 +367,7 @@
       .state('css-generator.word-wrap', {
         url: '/word-wrap',
         templateUrl: 'generators/css-generator/word-wrap/word-wrap.template.html',
-        title: 'CSS Word Wrap Generator',
+        title: 'CSS3 Word Wrap Generator',
         ncyBreadcrumb: {
           label: 'Word Wrap'
         }

@@ -1,44 +1,6 @@
-<div class="row">
-  <div class="col-xs-12">
-    <top-ad></top-ad>
-  </div>
-</div>
-
-<div class="row" data-ng-controller="HtmlIFrameController as ctrl">
-  <div class="col-xs-12 col-md-6">
-    <div class="well">
-      <form class="form-horizontal">
-        <fieldset>
-          <legend>Fill in required fields.</legend>
-          <browser-support></browser-support>
-          <div class="form-group" data-abm-form-group>
-            <div class="col-sm-12">
-              <label data-wct-label for="inputSource">Source (URL)</label>
-              <input data-wct-input-text id="inputSource"
-              data-ng-model="ctrl.data.source" data-abm-form-control required>
-            </div>
-          </div>
-          <div class="form-group" data-abm-form-group>
-            <div class="col-sm-12">
-              <label data-wct-label for="inputName">Name</label>
-              <input data-wct-input-text id="inputName"
-              data-ng-model="ctrl.data.name" data-abm-form-control>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-
-  <div class="col-xs-12 col-md-6">
-    <h3>Preview</h3>
-
-    <div class="preview-html" ng-bind-html="ctrl.elementHtml() | rawHtml"></div>
-
-    <side-ad></side-ad>
-
-    <h3>Code</h3>
-
-    <section-code code-id="element-html" code="{{ctrl.elementHtml()}}"></section-code>
-  </div>
-</div>
+<generator data-controller-name="HtmlIFrameController"
+  data-generator-form="generators/html-generator/iframe/partials/form.template.html"
+  data-generator-preview="generators/html-generator/iframe/partials/preview.template.html"
+  data-generator-code="generators/html-generator/iframe/partials/code.template.html"
+  data-browser-support>
+</generator>

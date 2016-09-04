@@ -1,0 +1,19 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectDisplay">Display</label>
+    <select data-wct-input-number id="selectDisplay"
+    data-ng-model="ctrl.data.display" data-abm-form-control>
+      <option value="block">Block</option>
+      <option value="inline">Inline</option>
+      <option value="inline-block">Inline-block</option>
+      <option value="list-item">List-item</option>
+      <option value="table">Table</option>
+      <option value="none">None</option>
+    </select>
+  </div>
+</div>
+
+<div class="alert alert-info">
+  Does not include table specific displays, because they should be used
+  only within an element with <code>display: table;</code>
+</div>

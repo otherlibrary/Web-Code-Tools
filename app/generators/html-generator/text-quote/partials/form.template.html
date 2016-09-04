@@ -1,0 +1,17 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectType">Type</label>
+    <select data-wct-select id="selectType"
+    data-ng-model="ctrl.data.type" data-abm-form-control>
+      <option value="q">Quote (short quote)</option>
+      <option value="blockquote">Blockquote (quote from another source)</option>
+    </select>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputText">Text</label>
+    <textarea data-wct-textarea id="inputText" rows="5"
+    data-ng-model="ctrl.data.text" data-abm-form-control></textarea>
+  </div>
+</div>

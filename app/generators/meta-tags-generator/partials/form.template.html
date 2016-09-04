@@ -1,0 +1,34 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputPageTitle">Page Title</label>
+    <input data-wct-input-text id="inputPageTitle"
+    data-ng-model="ctrl.data.pageTitle" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputDescription">Description</label>
+    <textarea data-wct-textarea id="inputDescription"
+    placeholder="Up to  160 characters." rows="3" maxlength="160"
+    data-ng-model="ctrl.data.description" data-abm-form-control required></textarea>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectIndex">What to Index</label>
+    <select data-wct-select id="selectIndex"
+    data-ng-model="ctrl.data.index" data-abm-form-control>
+      <option value="index, follow">Index this page &amp; follow the links</option>
+      <option value="index, nofollow">Index this page only</option>
+      <option value="noindex, follow">Not this page, but follow the links</option>
+      <option value="noindex, nofollow">Don't index this page or follow the links</option>
+    </select>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputAuthor">Author</label>
+    <input data-wct-input-text id="inputAuthor" placeholder="Author of the web page."
+    data-ng-model="ctrl.data.author" data-abm-form-control required>
+  </div>
+</div>

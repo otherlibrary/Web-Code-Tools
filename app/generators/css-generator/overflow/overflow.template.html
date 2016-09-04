@@ -1,56 +1,6 @@
-<div class="row">
-  <div class="col-xs-12">
-    <top-ad></top-ad>
-  </div>
-</div>
-
-<div class="row" data-ng-controller="CssOverflowController as ctrl">
-  <div class="col-xs-12 col-md-6">
-    <div class="well">
-      <form class="form-horizontal">
-        <fieldset>
-          <legend>Fill in required fields.</legend>
-          <browser-support></browser-support>
-          <div class="form-group" data-abm-form-group>
-            <div class="col-sm-12">
-              <label data-wct-label for="selectType">Type</label>
-              <select data-wct-select id="selectType"
-              data-ng-model="ctrl.data.type" data-abm-form-control>
-                <option value="overflow">Overflow</option>
-                <option value="overflow-x">Overflow-X</option>
-                <option value="overflow-y">Overflow-Y</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group" data-abm-form-group>
-            <div class="col-sm-12">
-              <label data-wct-label for="selectValue">Value</label>
-              <select data-wct-select id="selectValue"
-              data-ng-model="ctrl.data.value" data-abm-form-control>
-                <option value="auto">Auto</option>
-                <option value="visible">Visible</option>
-                <option value="hidden">Hidden</option>
-                <option value="scroll">Scroll</option>
-              </select>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-
-  <div class="col-xs-12 col-md-6">
-    <h3>Preview</h3>
-
-    <div class="preview preview-full" style="{{ctrl.elementCss()}}">
-      <p style="width:120%">This is just text to show you what happens when you use the overflow property on a box with text in it. The box is any container, such as the body, a div, a section, or anything else. This text (p tag) has a bigger width and height than the white box behind it, to show you what overflow does.</p>
-    </div>
-
-    <side-ad></side-ad>
-
-    <h3>Code</h3>
-
-    <section-code code-id="element-css" title="Add this to the element that you want to change the overflow on."
-      code="{{ctrl.elementCss()}}"></section-code>
-  </div>
-</div>
+<generator data-controller-name="CssOverflowController"
+  data-generator-form="generators/css-generator/overflow/partials/form.template.html"
+  data-generator-preview="generators/css-generator/overflow/partials/preview.template.html"
+  data-generator-code="generators/css-generator/overflow/partials/code.template.html"
+  data-browser-support>
+</generator>

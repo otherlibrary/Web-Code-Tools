@@ -1,47 +1,6 @@
-<div class="row">
-  <div class="col-xs-12">
-    <top-ad></top-ad>
-  </div>
-</div>
-
-<div class="row" data-ng-controller="CssTextDecorationController as ctrl">
-  <div class="col-xs-12 col-md-6">
-    <div class="well">
-      <form class="form-horizontal">
-        <fieldset>
-          <legend>Fill in required fields.</legend>
-          <browser-support></browser-support>
-          <div class="form-group" data-abm-form-group>
-            <div class="col-sm-12">
-              <label data-wct-label for="selectTextDecoration">Text Decoration</label>
-              <select data-wct-select id="selectTextDecoration"
-              data-ng-model="ctrl.data.textDecoration" data-abm-form-control>
-                <option value="none">None</option>
-                <option value="underline">Underline</option>
-                <option value="overline">Overline</option>
-                <option value="line-through">Line-through</option>
-              </select>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-
-  <div class="col-xs-12 col-md-6">
-    <h3>Preview</h3>
-
-    <div class="preview preview-full">
-      <p style="{{ctrl.elementCss()}}">
-        This is what your chosen text decoration would look like.
-      </p>
-    </div>
-
-    <side-ad></side-ad>
-
-    <h3>Code</h3>
-
-    <section-code code-id="element-css" title="Add this to the element where you want to change the text decoration."
-      code="{{ctrl.elementCss()}}"></section-code>
-  </div>
-</div>
+<generator data-controller-name="CssTextDecorationController"
+  data-generator-form="generators/css-generator/text-decoration/partials/form.template.html"
+  data-generator-preview="generators/css-generator/text-decoration/partials/preview.template.html"
+  data-generator-code="generators/css-generator/text-decoration/partials/code.template.html"
+  data-browser-support>
+</generator>

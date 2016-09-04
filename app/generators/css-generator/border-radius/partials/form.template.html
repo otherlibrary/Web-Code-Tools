@@ -1,0 +1,51 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectType">Type</label>
+    <select data-wct-select id="selectType" data-ng-model="ctrl.data.type"
+    data-abm-form-control>
+      <option value="same">Same on all corners</option>
+      <option value="different">Different on all corners</option>
+    </select>
+  </div>
+</div>
+
+<div data-ng-if="ctrl.data.type === 'same'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputRadius">Radius</label>
+      <input data-wct-input-range id="inputRadius" min="0" max="100"
+      data-ng-model="ctrl.data.all" data-abm-form-control>
+    </div>
+  </div>
+</div>
+
+<div data-ng-if="ctrl.data.type === 'different'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputTopLeft">Top Left Radius</label>
+      <input data-wct-input-range id="inputTopLeft" min="0" max="100"
+      data-ng-model="ctrl.data.topLeft" data-abm-form-control>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputTopRight">Top Right Radius</label>
+      <input data-wct-input-range id="inputTopRight" min="0" max="100"
+      data-ng-model="ctrl.data.topRight" data-abm-form-control>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputBottomRight">Bottom Right Radius</label>
+      <input data-wct-input-range id="inputBottomRight" min="0" max="100"
+      data-ng-model="ctrl.data.bottomRight" data-abm-form-control>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputBottomLeft">Bottom Left Radius</label>
+      <input data-wct-input-range id="inputBottomLeft" min="0" max="100"
+      data-ng-model="ctrl.data.bottomLeft" data-abm-form-control>
+    </div>
+  </div>
+</div>

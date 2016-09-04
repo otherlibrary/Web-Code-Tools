@@ -1,0 +1,82 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputTitle">Title (Without Branding, if Possible)</label>
+    <input data-wct-input-text id="inputTitle"
+    data-ng-model="ctrl.data.title" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputSiteName">Site Name</label>
+    <input data-wct-input-text id="inputSiteName"
+    data-ng-model="ctrl.data.siteName" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputSiteUrl">Site URL</label>
+    <input data-wct-input-text id="inputSiteUrl"
+    data-ng-model="ctrl.data.siteUrl" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputDescription">Description</label>
+    <textarea data-wct-textarea id="inputDescription"
+    placeholder="Up to 200 characters." rows="4" maxlength="200"
+    data-ng-model="ctrl.data.description" data-abm-form-control required></textarea>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectType">Type</label>
+    <select data-wct-select id="selectType"
+    data-ng-model="ctrl.data.type" data-abm-form-control>
+      <option value="article">Article</option>
+      <option value="book">Book</option>
+      <option value="books.author">Book Author</option>
+      <option value="books.genre">Book Genre</option>
+      <option value="business.business">Business</option>
+      <option value="fitness.course">Fitness Course</option>
+      <option value="music.album">Music Album</option>
+      <option value="music.musician">Music Musician</option>
+      <option value="music.playlist">Music Playlist</option>
+      <option value="music.radio_station">Music Radio Station</option>
+      <option value="music.song">Music Song</option>
+      <option value="object">Object (Generic Object)</option>
+      <option value="place">Place</option>
+      <option value="product">Product</option>
+      <option value="product.group">Product Group</option>
+      <option value="product.item">Product Item</option>
+      <option value="profile">Profile</option>
+      <option value="quick_election.election">Election</option>
+      <option value="restaurant">Restaurant</option>
+      <option value="restaurant.menu">Restaurant Menu</option>
+      <option value="restaurant.menu_item">Restaurant Menu Item</option>
+      <option value="restaurant.menu_section">Restaurant Menu Section</option>
+      <option value="video.episode">Video Episode</option>
+      <option value="video.movie">Video Movie</option>
+      <option value="video.tv_show">Video TV Show</option>
+      <option value="video.other">Video Other</option>
+      <option value="website">Website</option>
+    </select>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectNumImages">Number of Images</label>
+    <select data-wct-select id="selectNumImages" data-ng-change="ctrl.updateNumImages()"
+    data-ng-model="ctrl.data.numImages" data-abm-form-control>
+      <option ng-repeat="n in range(1,10)" value="{{n}}">{{n}}</option>
+    </select>
+  </div>
+</div>
+<div data-ng-repeat="image in ctrl.data.images track by $index">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputImageUrl">Image {{$index + 1}} URL</label>
+      <input data-wct-input-text id="inputImageUrl"
+      data-ng-model="ctrl.data.images[$index].url" data-abm-form-control required>
+    </div>
+  </div>
+</div>

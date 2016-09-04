@@ -1,0 +1,171 @@
+<div data-ng-if="ctrl.data.type === 'same'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="selectType">Type</label>
+      <select data-wct-select id="selectType" data-ng-model="ctrl.data.type"
+      data-abm-form-control>
+        <option value="same">Same on all sides</option>
+        <option value="different">Different on all sides</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputColor">Color</label>
+      <input data-wct-input-text id="inputColor" colorpicker="hex"
+      data-ng-model="ctrl.data.color1" data-abm-form-control required>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="selectStyle">Style</label>
+      <select data-wct-select id="selectStyle" data-ng-model="ctrl.data.style1"
+      data-abm-form-control>
+        <option value="dotted">Dotted</option>
+        <option value="dashed">Dashed</option>
+        <option value="solid">Solid</option>
+        <option value="double">Double</option>
+        <option value="groove">Groove</option>
+        <option value="ridge">Ridge</option>
+        <option value="inset">Inset</option>
+        <option value="outset">Outset</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputWidth">Width (px)</label>
+      <input data-wct-input-range id="inputWidth"
+      data-ng-model="ctrl.data.width1" data-abm-form-control required>
+    </div>
+  </div>
+</div>
+
+<div data-ng-if="ctrl.data.type === 'different'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="selectType">Types</label>
+      <select data-wct-select id="selectType" data-ng-model="ctrl.data.type"
+      data-abm-form-control>
+        <option value="same">Same on all sides</option>
+        <option value="different">Different on all sides</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-6">
+      <label data-wct-label for="inputColorLeft">Color Left</label>
+      <input data-wct-input-text id="inputColorLeft" colorpicker="hex"
+      data-ng-model="ctrl.data.color1" data-abm-form-control required>
+    </div>
+
+    <div class="col-sm-6">
+      <label data-wct-label for="selectStyleLeft">Style Left</label>
+      <select data-wct-select id="selectStyleLeft" data-ng-model="ctrl.data.style1"
+      data-abm-form-control>
+        <option value="dotted">Dotted</option>
+        <option value="dashed">Dashed</option>
+        <option value="solid">Solid</option>
+        <option value="double">Double</option>
+        <option value="groove">Groove</option>
+        <option value="ridge">Ridge</option>
+        <option value="inset">Inset</option>
+        <option value="outset">Outset</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputWidthLeft">Width Left (px)</label>
+      <input data-wct-input-range id="inputWidthLeft" data-ng-model="ctrl.data.width1"
+      data-abm-form-control>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-6">
+      <label data-wct-label for="inputColorTop">Color Top</label>
+      <input data-wct-input-text id="inputColorTop" colorpicker="hex"
+      data-ng-model="ctrl.data.color2" data-abm-form-control required>
+    </div>
+
+    <div class="col-sm-6">
+      <label data-wct-label for="selectStyleTop">Style Top</label>
+      <select data-wct-select id="selectStyleTop" data-ng-model="ctrl.data.style2"
+      data-abm-form-control>
+        <option value="dotted">Dotted</option>
+        <option value="dashed">Dashed</option>
+        <option value="solid">Solid</option>
+        <option value="double">Double</option>
+        <option value="groove">Groove</option>
+        <option value="ridge">Ridge</option>
+        <option value="inset">Inset</option>
+        <option value="outset">Outset</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputWidthTop">Width Top (px)</label>
+      <input data-wct-input-range id="inputWidthTop" data-ng-model="ctrl.data.width2"
+      data-abm-form-control>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-6">
+      <label data-wct-label for="inputColorRight">Color Right</label>
+      <input data-wct-input-text id="inputColorRight" colorpicker="hex"
+      data-ng-model="ctrl.data.color3" data-abm-form-control required>
+    </div>
+
+    <div class="col-sm-6">
+      <label data-wct-label for="selectStyleRight">Style Right</label>
+      <select data-wct-select id="selectStyleRight" data-ng-model="ctrl.data.style3"
+      data-abm-form-control>
+        <option value="dotted">Dotted</option>
+        <option value="dashed">Dashed</option>
+        <option value="solid">Solid</option>
+        <option value="double">Double</option>
+        <option value="groove">Groove</option>
+        <option value="ridge">Ridge</option>
+        <option value="inset">Inset</option>
+        <option value="outset">Outset</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputWidthRight">Width Right (px)</label>
+      <input data-wct-input-range id="inputWidthRight" data-ng-model="ctrl.data.width3"
+      data-abm-form-control>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-6">
+      <label data-wct-label for="inputColorBottom">Color Bottom</label>
+      <input data-wct-input-text id="inputColorBottom" colorpicker="hex"
+      data-ng-model="ctrl.data.color4" data-abm-form-control required>
+    </div>
+
+    <div class="col-sm-6">
+      <label data-wct-label for="selectStyleBottom">Style Bottom</label>
+      <select data-wct-select id="selectStyleBottom" data-ng-model="ctrl.data.style4"
+      data-abm-form-control>
+        <option value="dotted">Dotted</option>
+        <option value="dashed">Dashed</option>
+        <option value="solid">Solid</option>
+        <option value="double">Double</option>
+        <option value="groove">Groove</option>
+        <option value="ridge">Ridge</option>
+        <option value="inset">Inset</option>
+        <option value="outset">Outset</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputWidthBottom">Width Bottom (px)</label>
+      <input data-wct-input-range id="inputWidthBottom" data-ng-model="ctrl.data.width4"
+      data-abm-form-control>
+    </div>
+  </div>
+</div>

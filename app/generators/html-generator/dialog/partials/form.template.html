@@ -1,0 +1,26 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectOpen">Open or Closed?</label>
+    <select data-wct-select id="selectOpen"
+    data-ng-model="ctrl.data.open" data-abm-form-control>
+      <option value="open">Open</option>
+      <option value="">Closed</option>
+    </select>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputText">Text or HTML to Appear in Dialog</label>
+    <textarea data-wct-textarea id="inputText" rows="5"
+    data-ng-model="ctrl.data.text" data-abm-form-control></textarea>
+  </div>
+</div>
+
+<div class="alert alert-info">
+  It's best to generate the dialog while it's 'closed' so that it
+  doesn't hide anything on the screen.
+</div>
+
+<div class="alert alert-info">
+  Style the dialog using CSS and add more functionality with Javascript.
+</div>

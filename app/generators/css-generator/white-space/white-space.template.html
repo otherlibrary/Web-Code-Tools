@@ -1,52 +1,6 @@
-<div class="row">
-  <div class="col-xs-12">
-    <top-ad></top-ad>
-  </div>
-</div>
-
-<div class="row" data-ng-controller="CssWhiteSpaceController as ctrl">
-  <div class="col-xs-12 col-md-6">
-    <div class="well">
-      <form class="form-horizontal">
-        <fieldset>
-          <legend>Fill in required fields.</legend>
-          <browser-support></browser-support>
-          <div class="form-group" data-abm-form-group>
-            <div class="col-sm-12">
-              <label data-wct-label for="selectWhiteSpace">White Space</label>
-              <select data-wct-select id="selectWhiteSpace"
-              data-ng-model="ctrl.data.whiteSpace" data-abm-form-control>
-                <option value="normal">Normal</option>
-                <option value="nowrap">No wrap</option>
-                <option value="pre">Pre</option>
-                <option value="pre-line">Pre-line</option>
-                <option value="pre-wrap">Pre-wrap</option>
-              </select>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-
-  <div class="col-xs-12 col-md-6">
-    <h3>Preview</h3>
-
-    <div class="preview preview-full">
-      <p style="{{ctrl.elementCss()}}">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac augue
-        libero. Quisque rhoncus congue dignissim. Cum sociis natoque penatibus
-        et magnis dis parturient montes, nascetur ridiculus mus. Duis congue
-        nec dolor a cursus. Pellentesque nec sapien elit. Proin mollis quis
-        metus nec ornare.
-      </p>
-    </div>
-
-    <side-ad></side-ad>
-
-    <h3>Code</h3>
-
-    <section-code code-id="element-css" title="Add this to the element where you want to change the white spacing."
-      code="{{ctrl.elementCss()}}"></section-code>
-  </div>
-</div>
+<generator data-controller-name="CssWhiteSpaceController"
+  data-generator-form="generators/css-generator/white-space/partials/form.template.html"
+  data-generator-preview="generators/css-generator/white-space/partials/preview.template.html"
+  data-generator-code="generators/css-generator/white-space/partials/code.template.html"
+  data-browser-support>
+</generator>

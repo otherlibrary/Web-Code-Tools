@@ -1,0 +1,16 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectVisibility">Visibility</label>
+    <select data-wct-select id="selectVisibility"
+    data-ng-model="ctrl.data.visibility" data-abm-form-control>
+      <option value="visible">Visible</option>
+      <option value="hidden">Hidden</option>
+    </select>
+  </div>
+</div>
+
+<div class="alert alert-warning">
+  <strong>Heads up!</strong> Changing the visibility of an element doesn't
+  remove the space it takes on the page. To hide an element that does
+  not take any space, use the <a data-ng-href="#css-generator/display">display</a> property.
+</div>

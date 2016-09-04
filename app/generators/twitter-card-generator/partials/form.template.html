@@ -1,0 +1,167 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectType">Type</label>
+    <select data-wct-select id="selectType" data-ng-model="ctrl.data.type"
+    data-abm-form-control>
+      <option value="app">App</option>
+      <option value="player">Player</option>
+      <option value="product">Product</option>
+      <option value="summary">Summary</option>
+      <option value="summary_large_image">Summary With Large Image</option>
+    </select>
+  </div>
+</div>
+
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputSiteUsername">Site Username (@username of Website)</label>
+    <input data-wct-input-text id="inputSiteUsername"
+    data-ng-model="ctrl.data.siteUsername" data-abm-form-control required>
+  </div>
+</div>
+
+<div data-ng-if="ctrl.data.type === 'player' ||
+    ctrl.data.type === 'product' ||
+    ctrl.data.type === 'summary' ||
+    ctrl.data.type === 'summary_large_image'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputTitle">Title</label>
+      <input data-wct-input-text id="inputTitle" maxlength="70"
+      placeholder="Up to 70 characters."
+      data-ng-model="ctrl.data.title" data-abm-form-control
+      ng-required="ctrl.data.type === 'player' ||
+        ctrl.data.type === 'product' ||
+        ctrl.data.type === 'summary' ||
+        ctrl.data.type === 'summary_large_image'">
+    </div>
+  </div>
+</div>
+
+<div data-ng-if="ctrl.data.type === 'app'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputAppName">App Name</label>
+      <input data-wct-input-text id="inputAppName"
+      data-ng-model="ctrl.data.appName" data-abm-form-control required>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputiPhoneAppId">iPhone App ID</label>
+      <input data-wct-input-text id="inputiPhoneAppId"
+      placeholder="i.e. 307234931"
+      data-ng-model="ctrl.data.iPhoneAppId" data-abm-form-control>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputiPadAppId">iPad App ID</label>
+      <input data-wct-input-text id="inputiPadAppId"
+      placeholder="i.e. 307234931"
+      data-ng-model="ctrl.data.iPadAppId" data-abm-form-control>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputGoogleAppId">Google Play App ID</label>
+      <input data-wct-input-text id="inputGoogleAppId"
+      placeholder="i.e. com.android.app"
+      data-ng-model="ctrl.data.googleAppId" data-abm-form-control>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputAppCountry">App Country (If Not Available in US Store)</label>
+      <input data-wct-input-text id="inputAppCountry"
+      placeholder="Two letter country code."
+      data-ng-model="ctrl.data.appCountry" data-abm-form-control>
+    </div>
+  </div>
+</div>
+
+<div data-ng-if="ctrl.data.type === 'player' ||
+    ctrl.data.type === 'product' ||
+    ctrl.data.type === 'summary_large_image'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputImageUrl">Image URL</label>
+      <input data-wct-input-text id="inputImageUrl"
+      data-ng-model="ctrl.data.imageUrl" data-abm-form-control required>
+    </div>
+  </div>
+</div>
+
+<div data-ng-if="ctrl.data.type === 'player'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputPlayerUrl">Player URL</label>
+      <input data-wct-input-text id="inputPlayerUrl"
+      placeholder="HTTPS URL to IFrame player."
+      data-ng-model="ctrl.data.playerUrl" data-abm-form-control required>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-6">
+      <label data-wct-label for="inputPlayerHeight">Player Height</label>
+      <input data-wct-input-text id="inputPlayerHeight"
+      placeholder="Height of IFrame in pixels."
+      data-ng-model="ctrl.data.playerHeight" data-abm-form-control required>
+    </div>
+    <div class="col-sm-6">
+      <label data-wct-label for="inputPlayerWidth">Player Width</label>
+      <input data-wct-input-text id="inputPlayerWidth"
+      placeholder="Width of IFrame in pixels."
+      data-ng-model="ctrl.data.playerWidth" data-abm-form-control required>
+    </div>
+  </div>
+</div>
+
+<div data-ng-if="ctrl.data.type === 'app' ||
+    ctrl.data.type === 'player' ||
+    ctrl.data.type === 'product' ||
+    ctrl.data.type === 'summary' ||
+    ctrl.data.type === 'summary_large_image'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputDescription">Description</label>
+      <textarea data-wct-textarea id="inputDescription"
+      placeholder="Up to 200 characters." rows="4" maxlength="200"
+      data-ng-model="ctrl.data.description" data-abm-form-control
+      ng-required="ctrl.data.type === 'product' ||
+        ctrl.data.type === 'summary' ||
+        ctrl.data.type === 'summary_large_image'"></textarea>
+    </div>
+  </div>
+</div>
+
+<div data-ng-if="ctrl.data.type === 'product'">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-6">
+      <label data-wct-label for="inputLabel1">Label 1</label>
+      <input data-wct-input-text id="inputLabel1"
+      placeholder="i.e. Price, Items in Stock, etc."
+      data-ng-model="ctrl.data.label1" data-abm-form-control required>
+    </div>
+    <div class="col-sm-6">
+      <label data-wct-label for="inputData1">Data 1</label>
+      <input data-wct-input-text id="inputData1"
+      placeholder="i.e. $49.99, 10, etc."
+      data-ng-model="ctrl.data.data1" data-abm-form-control required>
+    </div>
+  </div>
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-6">
+      <label data-wct-label for="inputLabel2">Label 2</label>
+      <input data-wct-input-text id="inputLabel2"
+      placeholder="i.e. Genre, Location, etc."
+      data-ng-model="ctrl.data.label2" data-abm-form-control required>
+    </div>
+    <div class="col-sm-6">
+      <label data-wct-label for="inputData2">Data 2</label>
+      <input data-wct-input-text id="inputData2"
+      placeholder="i.e. Rock, Ottawa, etc."
+      data-ng-model="ctrl.data.data2" data-abm-form-control required>
+    </div>
+  </div>
+</div>

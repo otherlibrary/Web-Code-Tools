@@ -1,49 +1,6 @@
-<div class="row">
-  <div class="col-xs-12">
-    <top-ad></top-ad>
-  </div>
-</div>
-
-<div class="row" data-ng-controller="CssBoxResizeController as ctrl">
-  <div class="col-xs-12 col-md-6">
-    <div class="well">
-      <form class="form-horizontal">
-        <fieldset>
-          <legend>Fill in required fields.</legend>
-          <browser-support></browser-support>
-          <div class="form-group" data-abm-form-group>
-            <div class="col-sm-12">
-              <label data-wct-label for="selectResize">Resize</label>
-              <select data-wct-select id="selectResize"
-              data-ng-model="ctrl.data.resize" data-abm-form-control>
-                <option value="both">Both</option>
-                <option value="horizontal">Horizontal</option>
-                <option value="vertical">Vertical</option>
-              </select>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-
-  <div class="col-xs-12 col-md-6">
-    <h3>Preview</h3>
-
-    <div class="alert alert-dismissible alert-info">
-      <button type="button" class="close" data-dismiss="alert">×</button>
-      <strong>Heads up!</strong> Drag the bottom right corner of the box.
-    </div>
-
-    <div class="preview preview-small" style="{{ctrl.elementCss()}}">
-      Resize me!
-    </div>
-
-    <side-ad></side-ad>
-
-    <h3>Code</h3>
-
-    <section-code code-id="element-css" title="Add this to the element that you would like to be able to resize."
-      code="{{ctrl.elementCss()}}"></section-code>
-  </div>
-</div>
+<generator data-controller-name="CssBoxResizeController"
+  data-generator-form="generators/css-generator/box-resize/partials/form.template.html"
+  data-generator-preview="generators/css-generator/box-resize/partials/preview.template.html"
+  data-generator-code="generators/css-generator/box-resize/partials/code.template.html"
+  data-browser-support>
+</generator>
