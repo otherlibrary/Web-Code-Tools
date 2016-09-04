@@ -52,12 +52,12 @@
         "routeName": "input-telephone"
       },
       {
-        "name": "Textarea",
-        "routeName": "textarea"
-      },
-      {
         "name": "Text",
         "routeName": "input-text"
+      },
+      {
+        "name": "Textarea",
+        "routeName": "textarea"
       },
       {
         "name": "URL",
@@ -88,6 +88,10 @@
     "generators":
     [
       {
+        "name": "Bi-Directional Override",
+        "routeName": "text-bi-directional-override"
+      },
+      {
         "name": "Bold",
         "routeName": "text-bold"
       },
@@ -96,36 +100,32 @@
         "routeName": "text-cite"
       },
       {
-        "name": "Mark (Highlight)",
-        "routeName": "text-mark"
-      },
-      {
-        "name": "Italic",
-        "routeName": "text-italic"
+        "name": "Code",
+        "routeName": "text-code"
       },
       {
         "name": "Incorrect Text (Strikethrough)",
         "routeName": "text-incorrect"
       },
       {
-        "name": "Underline",
-        "routeName": "text-underline"
+        "name": "Italic",
+        "routeName": "text-italic"
       },
       {
-        "name": "Bi-Directional Override",
-        "routeName": "text-bi-directional-override"
+        "name": "Mark (Highlight)",
+        "routeName": "text-mark"
       },
       {
         "name": "Quote & Blockquote",
         "routeName": "text-quote"
       },
       {
-        "name": "Code",
-        "routeName": "text-code"
-      },
-      {
         "name": "Superscript & Subscript",
         "routeName": "text-superscript-subscript"
+      },
+      {
+        "name": "Underline",
+        "routeName": "text-underline"
       }
     ]
   },
@@ -133,10 +133,6 @@
     "name": "Other Elements",
     "generators":
     [
-      {
-        "name": "Meter",
-        "routeName": "meter"
-      },
       {
         "name": "Details",
         "routeName": "details"
@@ -146,16 +142,20 @@
         "routeName": "dialog"
       },
       {
+        "name": "Hyperlink",
+        "routeName": "hyperlink"
+      },
+      {
         "name": "IFrame",
         "routeName": "iframe"
       },
       {
-        "name": "Progress Bar",
-        "routeName": "progress-bar"
+        "name": "Meter",
+        "routeName": "meter"
       },
       {
-        "name": "Hyperlink",
-        "routeName": "hyperlink"
+        "name": "Progress Bar",
+        "routeName": "progress-bar"
       }
     ]
   },
