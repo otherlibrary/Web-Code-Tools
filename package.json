@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "The ultimate, web code generator.",
   "dependencies": {
-    "nodemailer": "^2.5.0"
+    "nodemailer": "^2.5.0",
   },
   "devDependencies": {
     "bower": "^1.7.7",

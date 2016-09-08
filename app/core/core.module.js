@@ -17,6 +17,7 @@
       'angularBootstrapMaterial',
       'angular-google-adsense',
       'ngclipboard',
-      'ng.deviceDetector'
+      'ng.deviceDetector',
+      'ui.router.metatags'
     ]);
 })();

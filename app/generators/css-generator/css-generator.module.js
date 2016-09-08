@@ -9,9 +9,12 @@
         url: '/animation',
         templateUrl: 'generators/css-generator/animation/animation.template.html',
         title: 'CSS3 Animation Generator',
-        description: 'Generate CSS3 keyframe animations with our online CSS generator tool. Preview the result live, and copy the generated code to your website. No coding required!',
         ncyBreadcrumb: {
           label: 'Animation'
+        },
+        metaTags: {
+          title: 'CSS3 Animation Generator',
+          description: 'Generate CSS3 keyframe animations with our online CSS generator tool. Preview the result live, and copy the generated code to your website. No coding required!'
         }
       })
       // Background Color
@@ -21,6 +24,9 @@
         title: 'CSS Background Color Generator',
         ncyBreadcrumb: {
           label: 'Background Color'
+        },
+        metaTags: {
+          title: 'CSS Background Color Generator'
         }
       })
       // Background Gradient
@@ -28,9 +34,12 @@
         url: '/background-gradient',
         templateUrl: 'generators/css-generator/background-gradient/background-gradient.template.html',
         title: 'CSS3 Background Gradient Generator',
-        description: 'Generate CSS3 linear and radial background gradients with our online CSS generator tool. Preview the live result, and copy the generated code to your website.',
         ncyBreadcrumb: {
           label: 'Background Gradient'
+        },
+        metaTags: {
+          title: 'CSS3 Background Gradient Generator',
+          description: 'Generate CSS3 linear and radial background gradients with our online CSS generator tool. Preview the live result, and copy the generated code to your website.'
         }
       })
       // Background Image
@@ -40,6 +49,9 @@
         title: 'CSS Background Image Generator',
         ncyBreadcrumb: {
           label: 'Background Image'
+        },
+        metaTags: {
+          title: 'CSS Background Image Generator'
         }
       })
       // Blur
@@ -49,6 +61,9 @@
         title: 'CSS3 Blur Filter Generator',
         ncyBreadcrumb: {
           label: 'Blur'
+        },
+        metaTags: {
+          title: 'CSS3 Blur Filter Generator'
         }
       })
       // Border
@@ -56,9 +71,12 @@
         url: '/border',
         templateUrl: 'generators/css-generator/border/border.template.html',
         title: 'CSS Border Generator',
-        description: 'Generate a CSS border to surround any HTML element using our online CSS generator tool. Preview the live result, and copy the generated code to your website.',
         ncyBreadcrumb: {
           label: 'Border'
+        },
+        metaTags: {
+          title: 'CSS Border Generator',
+          description: 'Generate a CSS border to surround any HTML element using our online CSS generator tool. Preview the live result, and copy the generated code to your website.'
         }
       })
       // Border Image
@@ -68,6 +86,9 @@
         title: 'CSS3 Border Image Generator',
         ncyBreadcrumb: {
           label: 'Border Image'
+        },
+        metaTags: {
+          title: 'CSS3 Border Image Generator'
         }
       })
       // Border Radius
@@ -75,9 +96,12 @@
         url: '/border-radius',
         templateUrl: 'generators/css-generator/border-radius/border-radius.template.html',
         title: 'CSS3 Border Radius Generator',
-        description: 'Generate a CSS3 border radius to round corners of any HTML element using our online CSS generator tool. Preview live and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Border Radius'
+        },
+        metaTags: {
+          title: 'CSS3 Border Radius Generator',
+          description: 'Generate a CSS3 border radius to round corners of any HTML element using our online CSS generator tool. Preview live and copy the code to your website.'
         }
       })
       // Box Resize
@@ -87,6 +111,9 @@
         title: 'CSS3 Box Resize Generator',
         ncyBreadcrumb: {
           label: 'Box Resize'
+        },
+        metaTags: {
+          title: 'CSS3 Box Resize Generator'
         }
       })
       // Box Shadow
@@ -94,9 +121,12 @@
         url: '/box-shadow',
         templateUrl: 'generators/css-generator/box-shadow/box-shadow.template.html',
         title: 'CSS3 Box Shadow Generator',
-        description: 'Generate a CSS3 box shadow with our online CSS generator tool. Preview the result and copy the code to your website. No coding skills required!',
         ncyBreadcrumb: {
           label: 'Box Shadow'
+        },
+        metaTags: {
+          title: 'CSS3 Box Shadow Generator',
+          description: 'Generate a CSS3 box shadow with our online CSS generator tool. Preview the result and copy the code to your website. No coding skills required!'
         }
       })
       // Brightness
@@ -106,6 +136,9 @@
         title: 'CSS3 Brightness Filter Generator',
         ncyBreadcrumb: {
           label: 'Brightness'
+        },
+        metaTags: {
+          title: 'CSS3 Brightness Filter Generator',
         }
       })
       // Contrast
@@ -115,6 +148,9 @@
         title: 'CSS3 Contrast Filter Generator',
         ncyBreadcrumb: {
           label: 'Contrast'
+        },
+        metaTags: {
+          title: 'CSS3 Contrast Filter Generator'
         }
       })
       // Columns
@@ -124,6 +160,9 @@
         title: 'CSS3 Columns Generator',
         ncyBreadcrumb: {
           label: 'Columns'
+        },
+        metaTags: {
+          title: 'CSS3 Columns Generator'
         }
       })
       // Cursor
@@ -133,6 +172,9 @@
         title: 'CSS Cursor Generator',
         ncyBreadcrumb: {
           label: 'Cursor'
+        },
+        metaTags: {
+          title: 'CSS Cursor Generator'
         }
       })
       // Display
@@ -142,6 +184,9 @@
         title: 'CSS Display Generator',
         ncyBreadcrumb: {
           label: 'Display'
+        },
+        metaTags: {
+          title: 'CSS Display Generator'
         }
       })
       // Grayscale
@@ -151,6 +196,9 @@
         title: 'CSS3 Grayscale Filter Generator',
         ncyBreadcrumb: {
           label: 'Grayscale'
+        },
+        metaTags: {
+          title: 'Grayscale'
         }
       })
       // Hue-Rotate
@@ -160,6 +208,9 @@
         title: 'CSS3 Hue-Rotate Filter Generator',
         ncyBreadcrumb: {
           label: 'Hue-Rotate'
+        },
+        metaTags: {
+          title: 'CSS3 Hue-Rotate Filter Generator'
         }
       })
       // Invert
@@ -169,6 +220,9 @@
         title: 'CSS3 Invert Filter Generator',
         ncyBreadcrumb: {
           label: 'Invert'
+        },
+        metaTags: {
+          title: 'CSS3 Invert Filter Generator'
         }
       })
       // Letter Spacing
@@ -178,6 +232,9 @@
         title: 'CSS Letter Spacing Generator',
         ncyBreadcrumb: {
           label: 'Letter Spacing'
+        },
+        metaTags: {
+          title: 'CSS Letter Spacing Generator'
         }
       })
       // Line Height
@@ -187,6 +244,9 @@
         title: 'CSS Line Height Generator',
         ncyBreadcrumb: {
           label: 'Line Height'
+        },
+        metaTags: {
+          title: 'CSS Line Height Generator'
         }
       })
       // List Style
@@ -196,6 +256,9 @@
         title: 'CSS List Style Generator',
         ncyBreadcrumb: {
           label: 'List Style'
+        },
+        metaTags: {
+          title: 'CSS List Style Generator'
         }
       })
       // Opacity
@@ -205,6 +268,9 @@
         title: 'CSS Opacity Generator',
         ncyBreadcrumb: {
           label: 'Opacity'
+        },
+        metaTags: {
+          title: 'CSS Opacity Generator'
         }
       })
       // Outline
@@ -214,6 +280,9 @@
         title: 'CSS Outline Generator',
         ncyBreadcrumb: {
           label: 'Outline'
+        },
+        metaTags: {
+          title: 'CSS Outline Generator'
         }
       })
       // Overflow
@@ -223,6 +292,9 @@
         title: 'CSS Overflow (x, y) Generator',
         ncyBreadcrumb: {
           label: 'Overflow (x, y)'
+        },
+        metaTags: {
+          title: 'CSS Overflow (x, y) Generator'
         }
       })
       // Perspective
@@ -232,6 +304,9 @@
         title: 'CSS3 Perspective Generator',
         ncyBreadcrumb: {
           label: 'Perspective'
+        },
+        metaTags: {
+          title: 'CSS3 Perspective Generator'
         }
       })
       // Saturate
@@ -241,6 +316,9 @@
         title: 'CSS3 Saturate Filter Generator',
         ncyBreadcrumb: {
           label: 'Saturate'
+        },
+        metaTags: {
+          title: 'CSS3 Saturate Filter Generator'
         }
       })
       // Sepia
@@ -250,6 +328,9 @@
         title: 'CSS3 Sepia Filter Generator',
         ncyBreadcrumb: {
           label: 'Sepia'
+        },
+        metaTags: {
+          title: 'CSS3 Sepia Filter Generator'
         }
       })
       // Tab Size
@@ -259,6 +340,9 @@
         title: 'CSS3 Tab Size Generator',
         ncyBreadcrumb: {
           label: 'Tab Size'
+        },
+        metaTags: {
+          title: 'CSS3 Tab Size Generator'
         }
       })
       // Text Align
@@ -268,6 +352,9 @@
         title: 'CSS Text Align Generator',
         ncyBreadcrumb: {
           label: 'Text Align'
+        },
+        metaTags: {
+          title: 'CSS Text Align Generator'
         }
       })
       // Text Decoration
@@ -277,6 +364,9 @@
         title: 'CSS Text Decoration Generator',
         ncyBreadcrumb: {
           label: 'Text Decoration'
+        },
+        metaTags: {
+          title: 'CSS Text Decoration Generator'
         }
       })
       // Text Indent
@@ -286,6 +376,9 @@
         title: 'CSS Text Indent Generator',
         ncyBreadcrumb: {
           label: 'Text Indent'
+        },
+        metaTags: {
+          title: 'CSS Text Indent Generator'
         }
       })
       // Text Shadow
@@ -296,6 +389,9 @@
         description: 'Generate a CSS3 text shadow for any text with our online CSS generator tool. Preview the result live and copy the code to your website. No coding required!',
         ncyBreadcrumb: {
           label: 'Text Shadow'
+        },
+        metaTags: {
+          title: 'CSS3 Text Shadow Generator'
         }
       })
       // Text Transform
@@ -305,6 +401,9 @@
         title: 'CSS Text Transform Generator',
         ncyBreadcrumb: {
           label: 'Text Transform'
+        },
+        metaTags: {
+          title: 'CSS Text Transform Generator'
         }
       })
       // Transform
@@ -312,9 +411,12 @@
         url: '/transform',
         templateUrl: 'generators/css-generator/transform/transform.template.html',
         title: 'CSS3 Transform Generator',
-        description: 'Generate CSS3 code to transform the rotation, skew and scale of any element with our CSS generator. Preview the result live and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Transform'
+        },
+        metaTags: {
+          title: 'CSS3 Transform Generator',
+          description: 'Generate CSS3 code to transform the rotation, skew and scale of any element with our CSS generator. Preview the result live and copy the code to your website.'
         }
       })
       // Transition
@@ -322,9 +424,12 @@
         url: '/transition',
         templateUrl: 'generators/css-generator/transition/transition.template.html',
         title: 'CSS3 Transition Generator',
-        description: 'Generate CSS3 code to smoothly transition an element from one state to another using our online CSS generator tool. Preview and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Transition'
+        },
+        metaTags: {
+          title: 'CSS3 Transition Generator',
+          description: 'Generate CSS3 code to smoothly transition an element from one state to another using our online CSS generator tool. Preview and copy the code to your website.'
         }
       })
       // Visibility
@@ -334,6 +439,9 @@
         title: 'CSS Visibility Generator',
         ncyBreadcrumb: {
           label: 'Visibility'
+        },
+        metaTags: {
+          title: 'CSS Visibility Generator'
         }
       })
       // White Space
@@ -343,6 +451,9 @@
         title: 'CSS White Space Generator',
         ncyBreadcrumb: {
           label: 'White Space'
+        },
+        metaTags: {
+          title: 'CSS White Space Generator'
         }
       })
       // Word Break
@@ -352,6 +463,9 @@
         title: 'CSS3 Word Break Generator',
         ncyBreadcrumb: {
           label: 'Word Break'
+        },
+        metaTags: {
+          title: 'CSS3 Word Break Generator'
         }
       })
       // Word Spacing
@@ -361,6 +475,9 @@
         title: 'CSS Word Spacing Generator',
         ncyBreadcrumb: {
           label: 'Word Spacing'
+        },
+        metaTags: {
+          title: 'CSS Word Spacing Generator'
         }
       })
       // Word Wrap
@@ -370,6 +487,9 @@
         title: 'CSS3 Word Wrap Generator',
         ncyBreadcrumb: {
           label: 'Word Wrap'
+        },
+        metaTags: {
+          title: 'CSS3 Word Wrap Generator'
         }
       });
   }]);

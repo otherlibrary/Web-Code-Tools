@@ -10,9 +10,12 @@
         url: '/audio',
         templateUrl: 'generators/html-generator/audio/audio.template.html',
         title: 'HTML5 Audio Generator',
-        description: 'Generate an HTML5 audio element to play sound or music on your website. Autoplay or loop, it\'s your choice! Preview, test, and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Audio'
+        },
+        metaTags: {
+          title: 'HTML5 Audio Generator',
+          description: 'Generate an HTML5 audio element to play sound or music on your website. Autoplay or loop, it\'s your choice! Preview, test, and copy the code to your website.'
         }
       })
       // Base Link
@@ -22,6 +25,9 @@
         title: 'HTML Base Link Generator',
         ncyBreadcrumb: {
           label: 'Base Link'
+        },
+        metaTags: {
+          title: 'HTML Base Link Generator'
         }
       })
       // Button
@@ -29,9 +35,12 @@
         url: '/button',
         templateUrl: 'generators/html-generator/button/button.template.html',
         title: 'HTML Button Generator',
-        description: 'Generate a generic HTML button to display text, content or an image using our online HTML generator tool. Preview live and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Button'
+        },
+        metaTags: {
+          title: 'HTML Button Generator',
+          description: 'Generate a generic HTML button to display text, content or an image using our online HTML generator tool. Preview live and copy the code to your website.'
         }
       })
       // Details
@@ -41,6 +50,9 @@
         title: 'HTML5 Details Generator',
         ncyBreadcrumb: {
           label: 'Details'
+        },
+        metaTags: {
+          title: 'HTML5 Details Generator'
         }
       })
       // Dialog
@@ -50,6 +62,9 @@
         title: 'HTML5 Dialog Generator',
         ncyBreadcrumb: {
           label: 'Dialog'
+        },
+        metaTags: {
+          title: 'HTML5 Dialog Generator'
         }
       })
       // Hyperlink
@@ -59,6 +74,9 @@
         title: 'HTML Hyperlink Generator',
         ncyBreadcrumb: {
           label: 'Hyperlink'
+        },
+        metaTags: {
+          title: 'HTML Hyperlink Generator'
         }
       })
       // IFrame
@@ -66,9 +84,12 @@
         url: '/iframe',
         templateUrl: 'generators/html-generator/iframe/iframe.template.html',
         title: 'HTML IFrame Generator',
-        description: 'Generate an IFrame to embed another HTML document into your own with our online HTML generator tool. Preview live and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'IFrame'
+        },
+        metaTags: {
+          title: 'HTML IFrame Generator',
+          description: 'Generate an IFrame to embed another HTML document into your own with our online HTML generator tool. Preview live and copy the code to your website.'
         }
       })
       // Image
@@ -76,9 +97,12 @@
         url: '/image',
         templateUrl: 'generators/html-generator/image/image.template.html',
         title: 'HTML Image Generator',
-        description: 'Generate an HTML image element to display any image on your website using our online HTML generator tool. Preview live and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Image'
+        },
+        metaTags: {
+          title: 'HTML Image Generator',
+          description: 'Generate an HTML image element to display any image on your website using our online HTML generator tool. Preview live and copy the code to your website.'
         }
       })
       // Input Checkbox / Radio
@@ -88,6 +112,9 @@
         title: 'HTML Checkbox & Radio Button Generator',
         ncyBreadcrumb: {
           label: 'Checkbox & Radio Button'
+        },
+        metaTags: {
+          title: 'HTML Checkbox & Radio Button Generator'
         }
       })
       // Input Color
@@ -97,6 +124,9 @@
         title: 'HTML5 Color Input Generator',
         ncyBreadcrumb: {
           label: 'Color Input'
+        },
+        metaTags: {
+          title: 'HTML5 Color Input Generator'
         }
       })
       // Input Date / Time
@@ -106,6 +136,9 @@
         title: 'HTML5 Date & Time Input Generator',
         ncyBreadcrumb: {
           label: 'Date & Time Input'
+        },
+        metaTags: {
+          title: 'HTML5 Date & Time Input Generator'
         }
       })
       // Input Email
@@ -113,9 +146,12 @@
         url: '/input-email',
         templateUrl: 'generators/html-generator/input-email/input-email.template.html',
         title: 'HTML5 Email Input Generator',
-        description: 'Generate an HTML5 email input. Some browsers validate the email address, and mobile browsers show an email-type keyboard. Preview and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Email Input'
+        },
+        metaTags: {
+          title: 'HTML5 Email Input Generator',
+          description: 'Generate an HTML5 email input. Some browsers validate the email address, and mobile browsers show an email-type keyboard. Preview and copy the code to your website.'
         }
       })
       // Input File
@@ -125,6 +161,9 @@
         title: 'HTML File Browser Generator',
         ncyBreadcrumb: {
           label: 'File Browser'
+        },
+        metaTags: {
+          title: 'HTML File Browser Generator'
         }
       })
       // Input Image
@@ -134,6 +173,9 @@
         title: 'HTML Image Button Generator',
         ncyBreadcrumb: {
           label: 'Image Button'
+        },
+        metaTags: {
+          title: 'HTML Image Button Generator'
         }
       })
       // Input Number / Range
@@ -143,6 +185,9 @@
         title: 'HTML5 Number & Range Input Generator',
         ncyBreadcrumb: {
           label: 'Number & Range Input'
+        },
+        metaTags: {
+          title: 'HTML5 Number & Range Input Generator'
         }
       })
       // Input Text
@@ -152,6 +197,9 @@
         title: 'HTML Password Input Generator',
         ncyBreadcrumb: {
           label: 'Password Input'
+        },
+        metaTags: {
+          title: 'HTML Password Input Generator'
         }
       })
       // Input Search
@@ -161,6 +209,9 @@
         title: 'HTML5 Search Input Generator',
         ncyBreadcrumb: {
           label: 'Search Input'
+        },
+        metaTags: {
+          title: 'HTML5 Search Input Generator'
         }
       })
       // Input Submit
@@ -170,6 +221,9 @@
         title: 'HTML Submit Input Generator',
         ncyBreadcrumb: {
           label: 'Submit Input'
+        },
+        metaTags: {
+          title: 'HTML Submit Input Generator'
         }
       })
       // Input Telephone
@@ -179,6 +233,9 @@
         title: 'HTML5 Telephone Input Generator',
         ncyBreadcrumb: {
           label: 'Telephone Input'
+        },
+        metaTags: {
+          title: 'HTML5 Telephone Input Generator'
         }
       })
       // Input Text
@@ -188,6 +245,9 @@
         title: 'HTML Text Input Generator',
         ncyBreadcrumb: {
           label: 'Text Input'
+        },
+        metaTags: {
+          title: 'HTML Text Input Generator'
         }
       })
       // Input URL
@@ -197,6 +257,9 @@
         title: 'HTML5 URL Input Generator',
         ncyBreadcrumb: {
           label: 'URL Input'
+        },
+        metaTags: {
+          title: 'HTML5 URL Input Generator'
         }
       })
       // Meter
@@ -206,6 +269,9 @@
         title: 'HTML5 Meter Generator',
         ncyBreadcrumb: {
           label: 'Meter'
+        },
+        metaTags: {
+          title: 'HTML5 Meter Generator'
         }
       })
       // Progress Bar
@@ -215,6 +281,9 @@
         title: 'HTML5 Progress Bar Generator',
         ncyBreadcrumb: {
           label: 'Progress Bar'
+        },
+        metaTags: {
+          title: 'HTML5 Progress Bar Generator'
         }
       })
       // Textarea
@@ -224,6 +293,9 @@
         title: 'HTML Textarea Generator',
         ncyBreadcrumb: {
           label: 'Textarea'
+        },
+        metaTags: {
+          title: 'HTML Textarea Generator'
         }
       })
       // Text Bi-Directional Override
@@ -233,6 +305,9 @@
         title: 'HTML Bi-Directional Override Generator',
         ncyBreadcrumb: {
           label: 'Bi-Directional Override'
+        },
+        metaTags: {
+          title: 'HTML Bi-Directional Override Generator'
         }
       })
       // Text Bold
@@ -242,6 +317,9 @@
         title: 'HTML Bold Text Generator',
         ncyBreadcrumb: {
           label: 'Bold Text'
+        },
+        metaTags: {
+          title: 'HTML Bold Text Generator'
         }
       })
       // Text Cite
@@ -251,6 +329,9 @@
         title: 'HTML Citation Generator',
         ncyBreadcrumb: {
           label: 'Citation'
+        },
+        metaTags: {
+          title: 'HTML Citation Generator'
         }
       })
       // Text Code
@@ -260,6 +341,9 @@
         title: 'HTML Code Styled Text Generator',
         ncyBreadcrumb: {
           label: 'Code Text'
+        },
+        metaTags: {
+          title: 'HTML Code Styled Text Generator'
         }
       })
       // Text Italic
@@ -269,6 +353,9 @@
         title: 'HTML Italic Text Generator',
         ncyBreadcrumb: {
           label: 'Italic Text'
+        },
+        metaTags: {
+          title: 'HTML Italic Text Generator'
         }
       })
       // Text Incorrect
@@ -278,6 +365,9 @@
         title: 'HTML5 Incorrect (Strikethrough) Text Generator',
         ncyBreadcrumb: {
           label: 'Incorrect Text'
+        },
+        metaTags: {
+          title: 'HTML5 Incorrect (Strikethrough) Text Generator'
         }
       })
       // Text Mark
@@ -287,6 +377,9 @@
         title: 'HTML5 Marked (Highlighted) Text Generator',
         ncyBreadcrumb: {
           label: 'Marked Text'
+        },
+        metaTags: {
+          title: 'HTML5 Marked (Highlighted) Text Generator'
         }
       })
       // Text Quote / Blockquote
@@ -296,6 +389,9 @@
         title: 'HTML Quote & Blockquote Generator',
         ncyBreadcrumb: {
           label: 'Quote & Blockquote'
+        },
+        metaTags: {
+          title: 'HTML Quote & Blockquote Generator'
         }
       })
       // Text Superscript / Subscript
@@ -305,6 +401,9 @@
         title: 'HTML Superscript & Subscript Generator',
         ncyBreadcrumb: {
           label: 'Superscript & Subscript'
+        },
+        metaTags: {
+          title: 'HTML Superscript & Subscript Generator'
         }
       })
       // Text Underline
@@ -314,6 +413,9 @@
         title: 'HTML Underlined Text Generator',
         ncyBreadcrumb: {
           label: 'Underlined Text'
+        },
+        metaTags: {
+          title: 'HTML Underlined Text Generator'
         }
       })
       // Video
@@ -321,9 +423,12 @@
         url: '/video',
         templateUrl: 'generators/html-generator/video/video.template.html',
         title: 'HTML5 Video Generator',
-        description: 'Generate an HTML5 video element to play a video on your website. Autoplay, muted or loop, it\'s your choice! Preview, test, and copy the code to your website.',
         ncyBreadcrumb: {
           label: 'Video'
+        },
+        metaTags: {
+          title: 'HTML5 Video Generator',
+          description: 'Generate an HTML5 video element to play a video on your website. Autoplay, muted or loop, it\'s your choice! Preview, test, and copy the code to your website.'
         }
       });
   }]);

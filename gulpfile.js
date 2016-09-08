@@ -36,7 +36,8 @@ gulp.task('scriptsVendor', function() {
     gulp.src('app/bower_components/angular-ui-router/release/angular-ui-router.min.js'),
     gulp.src('app/bower_components/clipboard/dist/clipboard.min.js'),
     gulp.src('app/bower_components/ngclipboard/dist/ngclipboard.min.js'),
-    gulp.src('app/bower_components/ng-device-detector/ng-device-detector.min.js')
+    gulp.src('app/bower_components/ng-device-detector/ng-device-detector.min.js'),
+    gulp.src('app/bower_components/ui-router-metatags/dist/ui-router-metatags.min.js')
   )
   .pipe(concat('scripts-vendor.min.js'))
   .pipe(removeUseStrict())

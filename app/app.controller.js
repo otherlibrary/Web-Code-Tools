@@ -24,8 +24,6 @@
 
         // Set the page title.
         $rootScope.pageTitle = toState.title;
-        // Set the page description.
-        $rootScope.pageDescription = toState.description;
         // Initialize the custom page style to empty.
         $rootScope.pageStyle = '';
 
