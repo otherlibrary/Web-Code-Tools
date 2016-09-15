@@ -53,9 +53,11 @@
       </a>
 
       <h2>Open Graph Generator</h2>
-      <a data-ui-sref="open-graph-generator">
-        Open Graph Generator
-      </a>
+      <div data-ng-repeat="generator in ctrl.openGraphGenerators">
+        <a data-ui-sref="open-graph-generator.{{generator.routeName}}">
+          {{generator.name}}
+        </a>
+      </div>
 
       <h2>Twitter Card Generator</h2>
       <a data-ui-sref="twitter-card-generator">
