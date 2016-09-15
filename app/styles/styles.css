@@ -309,11 +309,13 @@ ul {
 
 .dashboard-card-new {
   background-color: #F44336;
+  border-radius: 25px;
   color: #fff;
-  padding: 10px;
+  font-weight: 500;
+  padding: 10px 15px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 5px;
+  top: 5px;
 }
 
 /* Panels */
