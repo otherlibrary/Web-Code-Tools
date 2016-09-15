@@ -1,0 +1,113 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputTitle">Title</label>
+    <input data-wct-input-text id="inputTitle" 
+    data-ng-model="ctrl.data.title" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputUrl">URL</label>
+    <input data-wct-input-text id="inputUrl" placeholder="The URL of the page with this object." 
+    data-ng-model="ctrl.data.url" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputWebsite">Website</label>
+    <input data-wct-input-text id="inputWebsite" placeholder="The URL of your restaurant website." 
+    data-ng-model="ctrl.data.website" data-abm-form-control>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputDescription">Description</label>
+    <textarea data-wct-textarea id="inputDescription"
+    placeholder="Up to 200 characters." rows="4" maxlength="200"
+    data-ng-model="ctrl.data.description" data-abm-form-control></textarea>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputStreetAddress">Street Address</label>
+    <input data-wct-input-text id="inputStreetAddress" 
+    data-ng-model="ctrl.data.streetAddress" data-abm-form-control required>
+  </div>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputLocality">City</label>
+    <input data-wct-input-text id="inputLocality" 
+    data-ng-model="ctrl.data.locality" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputRegion">State / Province / Region</label>
+    <input data-wct-input-text id="inputRegion" 
+    data-ng-model="ctrl.data.region" data-abm-form-control required>
+  </div>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputPostalCode">Postal / Zip Code</label>
+    <input data-wct-input-text id="inputPostalCode" 
+    data-ng-model="ctrl.data.postalCode" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputCountry">Country</label>
+    <input data-wct-input-text id="inputCountry" 
+    data-ng-model="ctrl.data.country" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputEmail">Email</label>
+    <input data-wct-input-text id="inputEmail" 
+    data-ng-model="ctrl.data.email" data-abm-form-control>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputPhoneNumber">Phone Number</label>
+    <input data-wct-input-text id="inputPhoneNumber" 
+    data-ng-model="ctrl.data.phoneNumber" data-abm-form-control>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectNumImages">Number of Menus</label>
+    <select data-wct-select id="selectNumImages" data-ng-change="ctrl.updateNumMenus()"
+    data-ng-model="ctrl.data.numMenus" data-abm-form-control>
+      <option ng-repeat="n in $root.range(0,10)" value="{{n}}">{{n}}</option>
+    </select>
+  </div>
+</div>
+<div data-ng-repeat="menu in ctrl.data.menus track by $index">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputMenu">Menu {{$index + 1}} URL *</label>
+      <input data-wct-input-text id="inputMenu"
+      data-ng-model="menu.url" data-abm-form-control required>
+    </div>
+  </div>
+</div>
+<div class="alert alert-info" data-ng-if="ctrl.data.menus.length > 0">
+  * Provide a URL to a page with open graph data of type <a ui-sref="open-graph-generator.restaurant-menu">restaurant.menu</a>.
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectNumImages">Number of Images</label>
+    <select data-wct-select id="selectNumImages" data-ng-change="ctrl.updateNumImages()"
+    data-ng-model="ctrl.data.numImages" data-abm-form-control>
+      <option ng-repeat="n in $root.range(1,10)" value="{{n}}">{{n}}</option>
+    </select>
+  </div>
+</div>
+<div data-ng-repeat="image in ctrl.data.images track by $index">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputImageUrl">Image {{$index + 1}} URL</label>
+      <input data-wct-input-text id="inputImageUrl" placeholder="https://mydomain.com/image-{{$index + 1}}.png" 
+      data-ng-model="image.url" data-abm-form-control required>
+    </div>
+  </div>
+</div>

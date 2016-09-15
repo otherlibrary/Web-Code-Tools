@@ -5,9 +5,10 @@
   .controller('AppController', [
     '$rootScope',
     '$breadcrumb',
+    '$window',
     'pageInfoService',
 
-    function($rootScope, $breadcrumb, pageInfoService) {
+    function($rootScope, $breadcrumb, $window, pageInfoService) {
       var ctrl = this;
 
       // Declare an empty JSON-LD object.
@@ -22,7 +23,11 @@
         // Set the body background color.
         ctrl.bodyColor = pageInfoService.getPageThemeColor() + '-500';
 
-        // Set the page title.
+        // Set the page meta title.
+        $window.document.title = toState.metaTags.title;
+        // Set the page meta description.
+ -      $window.document.getElementsByName('description')[0].setAttribute('content', toState.metaTags.description);
+        // Set on-page title.
         $rootScope.pageTitle = toState.title;
         // Initialize the custom page style to empty.
         $rootScope.pageStyle = '';

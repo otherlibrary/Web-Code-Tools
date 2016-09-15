@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Article",
+    "routeName": "article"
+  },
+  {
+    "name": "Book",
+    "routeName": "book"
+  },
+  {
+    "name": "Book Author",
+    "routeName": "book-author"
+  },
+  {
+    "name": "Book Genre",
+    "routeName": "book-genre"
+  },
+  {
+    "name": "Business",
+    "routeName": "business"
+  },
+  {
+    "name": "Fitness Course",
+    "routeName": "fitness-course"
+  },
+  {
+    "name": "Game Achievement",
+    "routeName": "game-achievement"
+  },
+  {
+    "name": "Music Album",
+    "routeName": "music-album"
+  },
+  {
+    "name": "Music Playlist",
+    "routeName": "music-playlist"
+  },
+  {
+    "name": "Music Radio Station",
+    "routeName": "music-radio-station"
+  },
+  {
+    "name": "Music Song",
+    "routeName": "music-song"
+  },
+  {
+    "name": "Place",
+    "routeName": "place"
+  },
+  {
+    "name": "Product",
+    "routeName": "product"
+  },
+  {
+    "name": "Product Group",
+    "routeName": "product-group"
+  },
+  {
+    "name": "Product Item",
+    "routeName": "product-item"
+  },
+  {
+    "name": "Profile",
+    "routeName": "profile"
+  },
+  {
+    "name": "Restaurant",
+    "routeName": "restaurant"
+  },
+  {
+    "name": "Restaurant Menu",
+    "routeName": "restaurant-menu"
+  },
+  {
+    "name": "Restaurant Menu Item",
+    "routeName": "restaurant-menu-item"
+  },
+  {
+    "name": "Restaurant Menu Section",
+    "routeName": "restaurant-menu-section"
+  },
+  {
+    "name": "Video (Generic)",
+    "routeName": "video-other"
+  },
+  {
+    "name": "Video Episode",
+    "routeName": "video-episode"
+  },
+  {
+    "name": "Video Movie",
+    "routeName": "video-movie"
+  },
+  {
+    "name": "Video TV Show",
+    "routeName": "video-tv-show"
+  }
+]

@@ -17,7 +17,6 @@
     '$urlMatcherFactoryProvider',
     '$animateProvider',
     'AnalyticsProvider',
-    'UIRouterMetatagsProvider',
     
     function(
       $locationProvider, 
@@ -25,8 +24,7 @@
       $urlRouterProvider, 
       $urlMatcherFactoryProvider, 
       $animateProvider, 
-      AnalyticsProvider,
-      UIRouterMetatagsProvider) {
+      AnalyticsProvider) {
         $locationProvider.html5Mode(true);
 
         // Set Google Analytics account.
@@ -176,19 +174,10 @@
             }
           });
 
-        UIRouterMetatagsProvider
-          .setTitleSuffix(' | Web Code Tools')
-          .setDefaultTitle('The Ultimate Website Code Generator')
-          .setDefaultDescription('Test description');
-
         // Perform animations only on elements that successfully match the filter expression
         // to improve performance.
         $animateProvider.classNameFilter(/angular-animate/);
   }])
-  
-  .run(['$rootScope', 'MetaTags', function($rootScope, MetaTags) {
-    $rootScope.MetaTags = MetaTags;
-  }]);
 
   // Returns trusted HTML.
   // Source: http://stackoverflow.com/questions/15754515/how-to-render-html-with-angular-templates

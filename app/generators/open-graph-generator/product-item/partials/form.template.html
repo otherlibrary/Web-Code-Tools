@@ -1,0 +1,75 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputTitle">Title</label>
+    <input data-wct-input-text id="inputTitle" 
+    data-ng-model="ctrl.data.title" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputUrl">URL</label>
+    <input data-wct-input-text id="inputUrl" placeholder="The URL of the page with this object." 
+    data-ng-model="ctrl.data.url" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputPrice">Price</label>
+    <input data-wct-input-text id="inputPrice" placeholder="49.99" 
+    data-ng-model="ctrl.data.price" data-abm-form-control required>
+  </div>
+
+  <div class="col-sm-6">
+    <label data-wct-label for="inputCurrency">Currency</label>
+    <input data-wct-input-text id="inputCurrency" placeholder="USD" 
+    data-ng-model="ctrl.data.currency" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectAvailability">Availability</label>
+    <select data-wct-select id="selectAvailability" 
+    data-ng-model="ctrl.data.availability" data-abm-form-control>
+      <option value="available for order">Available for order</option>
+      <option value="in stock">In stock</option>
+      <option value="out of stock">Out of stock</option>
+      <option value="preorder">Preorder</option>
+    </select>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectCondition">Condition</label>
+    <select data-wct-select id="selectCondition" 
+    data-ng-model="ctrl.data.condition" data-abm-form-control>
+      <option value="new">New</option>
+      <option value="refurbished">Refurbished</option>
+      <option value="used">Used</option>
+    </select>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputRetailerId">Retailer Item ID</label>
+    <input data-wct-input-text id="inputRetailerId" placeholder="The retailer's ID for the item." 
+    data-ng-model="ctrl.data.retailerId" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectNumImages">Number of Images</label>
+    <select data-wct-select id="selectNumImages" data-ng-change="ctrl.updateNumImages()"
+    data-ng-model="ctrl.data.numImages" data-abm-form-control>
+      <option ng-repeat="n in $root.range(1,10)" value="{{n}}">{{n}}</option>
+    </select>
+  </div>
+</div>
+<div data-ng-repeat="image in ctrl.data.images track by $index">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputImageUrl">Image {{$index + 1}} URL</label>
+      <input data-wct-input-text id="inputImageUrl" placeholder="https://mydomain.com/image-{{$index + 1}}.png" 
+      data-ng-model="image.url" data-abm-form-control required>
+    </div>
+  </div>
+</div>

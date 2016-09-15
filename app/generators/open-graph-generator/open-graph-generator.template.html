@@ -7,8 +7,21 @@
     </div>
   </div>
 
-  <generator data-controller-name="OpenGraphController"
-    data-generator-form="generators/open-graph-generator/partials/form.template.html"
-    data-generator-code="generators/open-graph-generator/partials/code.template.html">
-  </generator>
+  <div data-ui-view>
+    <div class="row">
+      <div class="col-xs-12">
+        <top-ad></top-ad>
+      </div>
+    </div>
+    
+    <div data-ng-controller="OpenGraphGeneratorHomeController">
+      <div class="row">
+        <div data-ng-repeat="generator in generatorData" class="col-xs-12 col-sm-6 col-lg-4 angular-animate animate-repeat">
+          <a class="btn btn-default btn-lg btn-block btn-raised" data-ui-sref="open-graph-generator.{{generator.routeName}}">
+            {{generator.name}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

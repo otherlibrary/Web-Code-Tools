@@ -1,0 +1,69 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputTitle">Title</label>
+    <input data-wct-input-text id="inputTitle" placeholder="The author's name." 
+    data-ng-model="ctrl.data.title" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputUrl">URL</label>
+    <input data-wct-input-text id="inputUrl" placeholder="The URL of the page with this object." 
+    data-ng-model="ctrl.data.url" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputAuthorUrl">Author's Website URL</label>
+    <input data-wct-input-text id="inputAuthorUrl" 
+    data-ng-model="ctrl.data.authorUrl" data-abm-form-control>
+  </div>
+</div>
+
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputDescription">Description</label>
+    <textarea data-wct-textarea id="inputDescription"
+    placeholder="Up to 200 characters." rows="4" maxlength="200"
+    data-ng-model="ctrl.data.description" data-abm-form-control></textarea>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectNumBooks">Number of Books</label>
+    <select data-wct-select id="selectNumBooks" data-ng-change="ctrl.updateNumBooks()"
+    data-ng-model="ctrl.data.numBooks" data-abm-form-control>
+      <option ng-repeat="n in $root.range(0,50)" value="{{n}}">{{n}}</option>
+    </select>
+  </div>
+</div>
+<div data-ng-repeat="book in ctrl.data.books track by $index">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputBookUrl">Book {{$index + 1}} URL *</label>
+      <input data-wct-input-text id="inputBookUrl" placeholder="https://mydomain.com/book-{{$index + 1}}" 
+      data-ng-model="book.url" data-abm-form-control required>
+    </div>
+  </div>
+</div>
+<div class="alert alert-info" data-ng-if="ctrl.data.books.length > 0">
+  * Provide a URL to a page with open graph data of type <a ui-sref="open-graph-generator.book">books.book</a>.
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectNumImages">Number of Images</label>
+    <select data-wct-select id="selectNumImages" data-ng-change="ctrl.updateNumImages()"
+    data-ng-model="ctrl.data.numImages" data-abm-form-control>
+      <option ng-repeat="n in $root.range(1,10)" value="{{n}}">{{n}}</option>
+    </select>
+  </div>
+</div>
+<div data-ng-repeat="image in ctrl.data.images track by $index">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputImageUrl">Image {{$index + 1}} URL</label>
+      <input data-wct-input-text id="inputImageUrl" placeholder="https://mydomain.com/image-{{$index + 1}}.png" 
+      data-ng-model="image.url" data-abm-form-control required>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputTitle">Title</label>
+    <input data-wct-input-text id="inputTitle" 
+    data-ng-model="ctrl.data.title" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputUrl">URL</label>
+    <input data-wct-input-text id="inputUrl" placeholder="The URL of the page with this object." 
+    data-ng-model="ctrl.data.url" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectNumMusicians">Number of Musicians</label>
+    <select data-wct-select id="selectNumMusicians" data-ng-change="ctrl.updateNumMusicians()"
+    data-ng-model="ctrl.data.numMusicians" data-abm-form-control>
+      <option ng-repeat="n in $root.range(0,50)" value="{{n}}">{{n}}</option>
+    </select>
+  </div>
+</div>
+<div data-ng-repeat="musician in ctrl.data.musicians track by $index">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputMusician">Musician {{$index + 1}} URL *</label>
+      <input data-wct-input-text id="inputMusician" placeholder="https://mydomain.com/musician-{{$index + 1}}" 
+      data-ng-model="musician.url" data-abm-form-control required>
+    </div>
+  </div>
+</div>
+<div class="alert alert-info" data-ng-if="ctrl.data.musicians.length > 0">
+  * Provide a URL to the musician's Facebook profile or a page with 
+  open graph data of type <a ui-sref="open-graph-generator.profile">profile</a>.
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectNumSongs">Number of Songs</label>
+    <select data-wct-select id="selectNumSongs" data-ng-change="ctrl.updateNumSongs()"
+    data-ng-model="ctrl.data.numSongs" data-abm-form-control>
+      <option ng-repeat="n in $root.range(1,50)" value="{{n}}">{{n}}</option>
+    </select>
+  </div>
+</div>
+<div data-ng-repeat="song in ctrl.data.songs track by $index">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputSong">Song {{$index + 1}} URL **</label>
+      <input data-wct-input-text id="inputSong" placeholder="https://mydomain.com/song-{{$index + 1}}" 
+      data-ng-model="song.url" data-abm-form-control required>
+    </div>
+  </div>
+</div>
+<div class="alert alert-info">
+  ** Provide a URL to a page with open graph data of type <a ui-sref="open-graph-generator.music-song">music.song</a>.
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectNumImages">Number of Images</label>
+    <select data-wct-select id="selectNumImages" data-ng-change="ctrl.updateNumImages()"
+    data-ng-model="ctrl.data.numImages" data-abm-form-control>
+      <option ng-repeat="n in $root.range(1,10)" value="{{n}}">{{n}}</option>
+    </select>
+  </div>
+</div>
+<div data-ng-repeat="image in ctrl.data.images track by $index">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputImageUrl">Image {{$index + 1}} URL</label>
+      <input data-wct-input-text id="inputImageUrl" placeholder="https://mydomain.com/image-{{$index + 1}}.png" 
+      data-ng-model="image.url" data-abm-form-control required>
+    </div>
+  </div>
+</div>

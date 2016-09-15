@@ -1,0 +1,63 @@
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputTitle">Title</label>
+    <input data-wct-input-text id="inputTitle" placeholder="The name of the business." 
+    data-ng-model="ctrl.data.title" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputUrl">URL</label>
+    <input data-wct-input-text id="inputUrl" placeholder="The URL of the page with this object." 
+    data-ng-model="ctrl.data.url" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputStreetAddress">Street Address</label>
+    <input data-wct-input-text id="inputStreetAddress" 
+    data-ng-model="ctrl.data.streetAddress" data-abm-form-control required>
+  </div>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputLocality">City</label>
+    <input data-wct-input-text id="inputLocality" 
+    data-ng-model="ctrl.data.locality" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputRegion">State / Province / Region</label>
+    <input data-wct-input-text id="inputRegion" 
+    data-ng-model="ctrl.data.region" data-abm-form-control required>
+  </div>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputPostalCode">Postal / Zip Code</label>
+    <input data-wct-input-text id="inputPostalCode" 
+    data-ng-model="ctrl.data.postalCode" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="inputCountry">Country</label>
+    <input data-wct-input-text id="inputCountry" 
+    data-ng-model="ctrl.data.country" data-abm-form-control required>
+  </div>
+</div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-12">
+    <label data-wct-label for="selectNumImages">Number of Images</label>
+    <select data-wct-select id="selectNumImages" data-ng-change="ctrl.updateNumImages()"
+    data-ng-model="ctrl.data.numImages" data-abm-form-control>
+      <option ng-repeat="n in $root.range(1,10)" value="{{n}}">{{n}}</option>
+    </select>
+  </div>
+</div>
+<div data-ng-repeat="image in ctrl.data.images track by $index">
+  <div class="form-group" data-abm-form-group>
+    <div class="col-sm-12">
+      <label data-wct-label for="inputImageUrl">Image {{$index + 1}} URL</label>
+      <input data-wct-input-text id="inputImageUrl" placeholder="https://mydomain.com/image-{{$index + 1}}.png" 
+      data-ng-model="image.url" data-abm-form-control required>
+    </div>
+  </div>
+</div>
