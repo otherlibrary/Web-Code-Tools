@@ -63,6 +63,13 @@
       <a data-ui-sref="twitter-card-generator">
         Twitter Card Generator
       </a>
+
+      <h2>File Name Generator</h2>
+      <div data-ng-repeat="generator in ctrl.fileNameGenerators">
+        <a data-ui-sref="file-name-generator.{{generator.routeName}}">
+          {{generator.name}}
+        </a>
+      </div>
     </div>
   </div>
 </section>

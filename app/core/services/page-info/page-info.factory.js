@@ -22,22 +22,25 @@
 
           case 'html-generator':
             return 'bg-orange';
-          
+
           case 'microdata-generator':
             return 'bg-red';
 
           case 'json-ld-generator':
             return 'bg-deep-purple';
-          
+
           case 'meta-tags-generator':
             return 'bg-purple';
-          
+
           case 'open-graph-generator':
             return 'bg-indigo';
-          
+
           case 'twitter-card-generator':
             return 'bg-light-blue';
-          
+
+          case 'file-name-generator':
+            return 'bg-teal';
+
           case 'error':
             return 'bg-red';
 

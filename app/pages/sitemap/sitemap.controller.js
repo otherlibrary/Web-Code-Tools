@@ -8,15 +8,17 @@
     'microdataGeneratorService',
     'jsonLdGeneratorService',
     'openGraphGeneratorService',
+    'fileNameGeneratorService',
 
     function(
       cssGeneratorService,
       htmlGeneratorService,
       microdataGeneratorService,
       jsonLdGeneratorService,
-      openGraphGeneratorService) {
+      openGraphGeneratorService,
+      fileNameGeneratorService) {
         var ctrl = this;
-        
+
         cssGeneratorService.getCssGenerators().then(function(data) {
           ctrl.cssGenerators = data;
         });
@@ -35,6 +37,10 @@
 
         openGraphGeneratorService.getOpenGraphGenerators().then(function(data) {
           ctrl.openGraphGenerators = data;
+        });
+
+        fileNameGeneratorService.getFileNameGenerators().then(function(data) {
+          ctrl.fileNameGenerators = data;
         });
   }]);
 })();

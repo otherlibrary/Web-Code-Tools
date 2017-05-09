@@ -17,13 +17,13 @@
     '$urlMatcherFactoryProvider',
     '$animateProvider',
     'AnalyticsProvider',
-    
+
     function(
-      $locationProvider, 
-      $stateProvider, 
-      $urlRouterProvider, 
-      $urlMatcherFactoryProvider, 
-      $animateProvider, 
+      $locationProvider,
+      $stateProvider,
+      $urlRouterProvider,
+      $urlMatcherFactoryProvider,
+      $animateProvider,
       AnalyticsProvider) {
         $locationProvider.html5Mode(true);
 
@@ -139,6 +139,18 @@
             metaTags: {
               title: 'The Ultimate Twitter Card Generator',
               description: 'The ultimate Twitter Card generator. Drive more traffic to your website when it\'s shared on Twitter by attaching photos, videos and media to your Tweets.'
+            }
+          })
+          .state('file-name-generator', {
+            url: '/file-name-generator',
+            templateUrl: 'generators/file-name-generator/file-name-generator.template.html',
+            title: 'File Name Generator',
+            ncyBreadcrumb: {
+              label: 'File Name Generator'
+            },
+            metaTags: {
+              title: 'File Name Generator',
+              description: 'Generate regular and slug file names for website URLs.'
             }
           })
           .state('sitemap', {
