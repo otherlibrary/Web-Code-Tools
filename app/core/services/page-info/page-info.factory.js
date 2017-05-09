@@ -4,7 +4,6 @@
   angular.module('app.core.services')
   .factory('pageInfoService', ['$location', function($location) {
     var path = $location.path().split('/')[1];
-    var pageTitle;
 
     return {
       setPath: function(newPath) {

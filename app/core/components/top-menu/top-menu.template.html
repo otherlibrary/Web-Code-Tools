@@ -25,19 +25,19 @@
       <div class="col-sm-9 col-md-4 hidden-xs">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a class="fa fa-facebook-square fa-2x" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u={{pageUrl}}&amp;title={{pageTitle}}"></a>
+            <a analytics-on analytics-event="Social Share" analytics-category="Facebook" analytics-label="{{ctrl.shareUrl}}" class="fa fa-facebook-square fa-2x" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u={{ctrl.shareUrl}}&amp;title={{ctrl.shareTitle}}"></a>
           </li>
           <li>
-            <a class="fa fa-twitter-square fa-2x" target="_blank" href="http://twitter.com/intent/tweet?status={{pageTitle}}+{{pageUrl}}" rel="nofollow"></a>
+            <a analytics-on analytics-event="Social Share" analytics-category="Twitter" analytics-label="{{ctrl.shareUrl}}" class="fa fa-twitter-square fa-2x" target="_blank" href="http://twitter.com/intent/tweet?status={{ctrl.shareTitle}}+{{ctrl.shareUrl}}" rel="nofollow"></a>
           </li>
           <li>
-            <a class="fa fa-google-plus-square fa-2x" target="_blank" href="https://plus.google.com/share?url={{pageUrl}}" rel="nofollow"></a>
+            <a analytics-on analytics-event="Social Share" analytics-category="Google+" analytics-label="{{ctrl.shareUrl}}" class="fa fa-google-plus-square fa-2x" target="_blank" href="https://plus.google.com/share?url={{ctrl.shareUrl}}" rel="nofollow"></a>
           </li>
           <li>
-            <a class="fa fa-reddit-square fa-2x" target="_blank" href="http://www.reddit.com/submit?url={{pageUrl}}&amp;title={{pageTitle}}" rel="nofollow"></a>
+            <a analytics-on analytics-event="Social Share" analytics-category="Reddit" analytics-label="{{ctrl.shareUrl}}" class="fa fa-reddit-square fa-2x" target="_blank" href="http://www.reddit.com/submit?url={{ctrl.shareUrl}}&amp;title={{ctrl.shareTitle}}" rel="nofollow"></a>
           </li>
           <li>
-            <a class="fa fa-linkedin-square fa-2x" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{pageUrl}}&amp;title={{pageTitle}}&amp;source=http://webcodetools.com" rel="nofollow"></a>
+            <a analytics-on analytics-event="Social Share" analytics-category="LinkedIn" analytics-label="{{ctrl.shareUrl}}" class="fa fa-linkedin-square fa-2x" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ctrl.shareUrl}}&amp;title={{ctrl.shareTitle}}&amp;source=http://webcodetools.com" rel="nofollow"></a>
           </li>
         </ul>
       </div>

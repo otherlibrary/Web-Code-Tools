@@ -2,10 +2,10 @@
   'use strict';
 
   angular.module('app.core.components')
-  .controller('TopMenuController', ['$rootScope', '$scope', '$location', 'pageInfoService',
-    function($rootScope, $scope, $location, pageInfoService) {
+  .controller('TopMenuController', ['$rootScope', '$location', 'pageInfoService',
+    function($rootScope, $location, pageInfoService) {
       var ctrl = this;
-      
+
       // Initially, collapse the navigation for mobile.
       $rootScope.navCollapsed = true;
 
@@ -13,12 +13,16 @@
       var titleExtension = ' - Web Code Tools';
 
       // Set the page title.
-      $scope.pageTitle = $rootScope.pageTitle + titleExtension;
+      ctrl.shareTitle = $rootScope.shareTitle + titleExtension;
+      // Set page URL.
+      ctrl.shareUrl = $location.absUrl();
 
       // Do stuff when the state changes.
       $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         // Change the page title when the state changes.
-        $scope.pageTitle = $rootScope.pageTitle + titleExtension;
+        ctrl.shareTitle = $rootScope.shareTitle + titleExtension;
+        // Change the page URL when the state changes.
+        ctrl.shareUrl = $location.absUrl();
         // Set the top menu class.
         ctrl.topMenuClass = pageInfoService.getPageThemeColor() + '-700';
       });
