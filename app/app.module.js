@@ -16,7 +16,7 @@
     '$urlRouterProvider',
     '$urlMatcherFactoryProvider',
     '$animateProvider',
-    'AnalyticsProvider',
+    '$analyticsProvider',
 
     function(
       $locationProvider,
@@ -24,14 +24,11 @@
       $urlRouterProvider,
       $urlMatcherFactoryProvider,
       $animateProvider,
-      AnalyticsProvider) {
+      $analyticsProvider) {
         $locationProvider.html5Mode(true);
 
-        // Set Google Analytics account.
-        AnalyticsProvider.setAccount({
-          tracker: 'UA-47682022-1',
-          trackEvent: true
-        });
+        $analyticsProvider.firstPageview(true); // Records pages that don't use $state or $route
+        $analyticsProvider.withBase(true);  // Records full path
 
         // If no state is found, go to 404 error page.
         $urlRouterProvider.otherwise(function($injector, $location){
