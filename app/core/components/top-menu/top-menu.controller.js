@@ -13,14 +13,14 @@
       var titleExtension = ' - Web Code Tools';
 
       // Set the page title.
-      ctrl.shareTitle = $rootScope.shareTitle + titleExtension;
+      ctrl.shareTitle = $rootScope.pageTitle + titleExtension;
       // Set page URL.
       ctrl.shareUrl = $location.absUrl();
 
       // Do stuff when the state changes.
       $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         // Change the page title when the state changes.
-        ctrl.shareTitle = $rootScope.shareTitle + titleExtension;
+        ctrl.shareTitle = $rootScope.pageTitle + titleExtension;
         // Change the page URL when the state changes.
         ctrl.shareUrl = $location.absUrl();
         // Set the top menu class.
