@@ -36,6 +36,32 @@
     data-ng-model="ctrl.data.secondColor" data-abm-form-control required>
   </div>
 </div>
+<div class="form-group" data-abm-form-group>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputFirstColorOpacity">
+      <span data-ng-if="ctrl.data.type == 'linear-gradient' || ctrl.data.type == 'repeating-linear-gradient'">
+        First Color Opacity
+      </span>
+      <span data-ng-if="ctrl.data.type == 'radial-gradient' || ctrl.data.type == 'repeating-radial-gradient'">
+        Inner Color Opacity
+      </span>
+    </label>
+    <input data-wct-input-range id="inputFirstColorOpacity" max="100" 
+    data-ng-model="ctrl.data.firstColorOpacity" data-abm-form-control required>
+  </div>
+  <div class="col-sm-6">
+    <label data-wct-label for="inputSecondColorOpacity">
+      <span data-ng-if="ctrl.data.type == 'linear-gradient' || ctrl.data.type == 'repeating-linear-gradient'">
+        Second Color Opacity
+      </span>
+      <span data-ng-if="ctrl.data.type == 'radial-gradient' || ctrl.data.type == 'repeating-radial-gradient'">
+        Outer Color Opacity
+      </span>
+    </label>
+    <input data-wct-input-range id="inputSecondColorOpacity" max="100" 
+    data-ng-model="ctrl.data.secondColorOpacity" data-abm-form-control required>
+  </div>
+</div>
 <div class="form-group" data-abm-form-group
 data-ng-if="ctrl.data.type == 'repeating-linear-gradient' || ctrl.data.type == 'repeating-radial-gradient'">
   <div class="col-sm-12">
