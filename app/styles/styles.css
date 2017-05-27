@@ -130,6 +130,10 @@ ul {
   margin-bottom: 30px;
 }
 
+.dashboard-ad {
+  margin-bottom: 30px;
+}
+
 .top-ad {
   margin-bottom: 30px;
 }
@@ -323,10 +327,6 @@ ul {
 
 .dashboard-card {
   padding-bottom: 25px;
-}
-
-.dashboard-card .card:hover {
-
 }
 
 .dashboard-card-new {
