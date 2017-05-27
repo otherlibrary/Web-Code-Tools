@@ -13,7 +13,9 @@
     };
 
     this.jsonLd = function() {
-      var html = '{\n  "@context": "http://schema.org/",';
+      var html = '<script type="application/ld+json">';
+      
+      html += '\n{\n  "@context": "http://schema.org/",';
 
       html += '\n  "@type": "Organization",';
       html += '\n  "name": "' + this.data.organizationName + '",';
@@ -29,6 +31,8 @@
       html += '\n  "telephone": "' + this.data.telephone + '"';
 
       html += '\n}';
+
+      html += '\n</script>';
 
       return html;
     }

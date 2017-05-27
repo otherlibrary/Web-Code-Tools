@@ -12,7 +12,9 @@
     };
 
     this.jsonLd = function() {
-      var html = '{\n  "@context": "http://schema.org/",';
+      var html = '<script type="application/ld+json">';
+      
+      html += '\n{\n  "@context": "http://schema.org/",';
 
       html += '\n  "@type": "Review",';
 
@@ -35,6 +37,8 @@
       html += '\n  }';
 
       html += '\n}';
+
+      html += '\n</script>';
 
       return html;
     }
